@@ -1,0 +1,281 @@
+{
+  "project": {
+    "name": "Timothy James Actor Portfolio",
+    "description": "Sanity CMS schemas for actor portfolio website",
+    "schemaTypes": [
+      "credit",
+      "headshot", 
+      "video",
+      "about",
+      "link",
+      "attribute",
+      "skill",
+      "imageAsset"
+    ]
+  },
+  "schemas": {
+    "credit": {
+      "name": "credit",
+      "title": "Credit",
+      "type": "document",
+      "description": "Represents acting credits and performances",
+      "fields": [
+        {
+          "name": "year",
+          "title": "Year",
+          "type": "string",
+          "required": true,
+          "description": "Year of the performance or production"
+        },
+        {
+          "name": "type",
+          "title": "Type",
+          "type": "string",
+          "required": true,
+          "description": "Category of the performance",
+          "options": {
+            "list": [
+              { "title": "Film", "value": "film" },
+              { "title": "TV", "value": "tv" },
+              { "title": "Musical Theatre", "value": "musicalTheatre" },
+              { "title": "Theatre", "value": "theatre" },
+              { "title": "Commercial", "value": "commercial" },
+              { "title": "Corporate", "value": "corporate" },
+              { "title": "Other", "value": "other" }
+            ]
+          }
+        },
+        {
+          "name": "project",
+          "title": "Project",
+          "type": "string",
+          "required": true,
+          "description": "Name of the project or production"
+        },
+        {
+          "name": "director",
+          "title": "Director",
+          "type": "string",
+          "required": false,
+          "description": "Director of the project"
+        },
+        {
+          "name": "company",
+          "title": "Company",
+          "type": "string",
+          "required": false,
+          "description": "Production company or theatre company"
+        },
+        {
+          "name": "role",
+          "title": "Role",
+          "type": "string",
+          "required": true,
+          "description": "Character name or role performed"
+        }
+      ]
+    },
+    "headshot": {
+      "name": "headshot",
+      "title": "Headshot",
+      "type": "document",
+      "description": "Professional headshot images",
+      "fields": [
+        {
+          "name": "image",
+          "title": "Image",
+          "type": "image",
+          "required": true,
+          "description": "Headshot image file",
+          "options": {
+            "hotspot": true
+          }
+        },
+        {
+          "name": "title",
+          "title": "Title",
+          "type": "string",
+          "required": false,
+          "description": "Title or caption for the headshot"
+        },
+        {
+          "name": "description",
+          "title": "Description",
+          "type": "text",
+          "required": false,
+          "description": "Additional description or context"
+        }
+      ]
+    },
+    "video": {
+      "name": "video",
+      "title": "Video",
+      "type": "document",
+      "description": "Video content (showreels, performances, etc.)",
+      "fields": [
+        {
+          "name": "title",
+          "title": "Title",
+          "type": "string",
+          "required": true,
+          "description": "Title of the video"
+        },
+        {
+          "name": "url",
+          "title": "Video URL (YouTube or Vimeo)",
+          "type": "url",
+          "required": true,
+          "description": "URL to video on YouTube or Vimeo",
+          "validation": {
+            "uri": {
+              "scheme": ["https://www.youtube.com", "https://youtu.be", "https://vimeo.com"],
+              "allowRelative": false
+            }
+          }
+        },
+        {
+          "name": "description",
+          "title": "Description",
+          "type": "text",
+          "required": false,
+          "description": "Description of the video content"
+        }
+      ]
+    },
+    "about": {
+      "name": "about",
+      "title": "About",
+      "type": "document",
+      "description": "Biography and personal information",
+      "fields": [
+        {
+          "name": "biography",
+          "title": "Biography",
+          "type": "text",
+          "required": true,
+          "description": "Actor's biography and background"
+        }
+      ]
+    },
+    "link": {
+      "name": "link",
+      "title": "Link",
+      "type": "document",
+      "description": "External links and social media",
+      "fields": [
+        {
+          "name": "title",
+          "title": "Title",
+          "type": "string",
+          "required": true,
+          "description": "Display name for the link"
+        },
+        {
+          "name": "url",
+          "title": "URL",
+          "type": "url",
+          "required": true,
+          "description": "External URL"
+        }
+      ]
+    },
+    "attribute": {
+      "name": "attribute",
+      "title": "Attribute",
+      "type": "document",
+      "description": "Personal attributes and characteristics",
+      "fields": [
+        {
+          "name": "category",
+          "title": "Category",
+          "type": "string",
+          "required": true,
+          "description": "Category of the attribute (e.g., 'Height', 'Eye Color')"
+        },
+        {
+          "name": "value",
+          "title": "Value",
+          "type": "string",
+          "required": true,
+          "description": "Value of the attribute"
+        }
+      ]
+    },
+    "skill": {
+      "name": "skill",
+      "title": "Skill",
+      "type": "document",
+      "description": "Acting skills and specializations",
+      "fields": [
+        {
+          "name": "category",
+          "title": "Category",
+          "type": "string",
+          "required": true,
+          "description": "Category of the skill (e.g., 'Dance', 'Accent', 'Combat')"
+        },
+        {
+          "name": "name",
+          "title": "Name",
+          "type": "string",
+          "required": true,
+          "description": "Name of the specific skill"
+        },
+        {
+          "name": "levelOfExpertise",
+          "title": "Level of Expertise",
+          "type": "string",
+          "required": false,
+          "description": "Proficiency level (e.g., 'Beginner', 'Intermediate', 'Advanced')"
+        }
+      ]
+    },
+    "imageAsset": {
+      "name": "imageAsset",
+      "title": "Image Asset",
+      "type": "document",
+      "description": "General image assets for the portfolio",
+      "fields": [
+        {
+          "name": "image",
+          "title": "Image",
+          "type": "image",
+          "required": true,
+          "description": "Image file",
+          "options": {
+            "hotspot": true
+          }
+        },
+        {
+          "name": "title",
+          "title": "Title",
+          "type": "string",
+          "required": false,
+          "description": "Title or caption for the image"
+        },
+        {
+          "name": "description",
+          "title": "Description",
+          "type": "text",
+          "required": false,
+          "description": "Additional description or context"
+        }
+      ]
+    }
+  },
+  "fieldTypes": {
+    "string": "Text field for short text input",
+    "text": "Text area for longer text content",
+    "url": "URL field for web links",
+    "image": "Image upload field with hotspot support",
+    "document": "Document type that can contain multiple fields"
+  },
+  "validation": {
+    "required": "Field must have a value",
+    "uri": "URL must match specified scheme patterns"
+  },
+  "options": {
+    "hotspot": "Enables image cropping and focal point selection",
+    "list": "Predefined list of options for selection"
+  }
+} 

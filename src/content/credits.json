@@ -1,0 +1,154 @@
+[
+    {
+      "year": 2024,
+      "type": "Musical Theatre",
+      "production": "Seussical the Musical",
+      "role": "General Genghis Kahn Schmidtz",
+      "company": "OCPAC",
+      "director": "Joey Phyland"
+    },
+    {
+      "year": 2023,
+      "type": "Corporate / Training",
+      "production": "Road Safety Education (videos & photography)",
+      "role": "Dad (Hero)",
+      "company": "Resonance Communications",
+      "director": "Eugene Hyland, Antuong Nguyen"
+    },
+    {
+      "year": 2022,
+      "type": "Musical Theatre",
+      "production": "Les Miserables",
+      "role": "Thenardier",
+      "company": "MDMS",
+      "director": "Anne Dewar"
+    },
+    {
+      "year": 2022,
+      "type": "Commercial",
+      "production": "Salvation Army – Heroes",
+      "role": "Hero Male (Dan)",
+      "company": "Monster & Bear",
+      "director": "Sarah-Jane Woulahan"
+    },
+    {
+      "year": 2019,
+      "type": "Commercial",
+      "production": "Respect Aged Care",
+      "role": "Visitor",
+      "company": "Monster & Bear",
+      "director": "Sarah Hickey"
+    },
+    {
+      "year": 2018,
+      "type": "Musical Theatre",
+      "production": "Next to Normal",
+      "role": "Dan",
+      "company": "Oxagen Productions",
+      "director": "Bernadette Sheedy"
+    },
+    {
+      "year": 2016,
+      "type": "Commercial",
+      "production": "BMW Mini Countryman (UK)",
+      "role": "Cyclist",
+      "company": "Iris Worldwide",
+      "director": "Ed Rosie"
+    },
+    {
+      "year": 2016,
+      "type": "Corporate / Training",
+      "production": "Ex ID – Lloyds Bank (UK)",
+      "role": "Bank Teller",
+      "company": "Speakeasy",
+      "director": "Steve Bookbinder"
+    },
+    {
+      "year": 2016,
+      "type": "Feature Film",
+      "production": "Star Wars: Rogue One",
+      "role": "Stormtrooper",
+      "company": "Lucasfilm",
+      "director": "Gareth Edwards"
+    },
+    {
+      "year": 2015,
+      "type": "Musical Theatre (UK Tour)",
+      "production": "Cinderella – Pantomime",
+      "role": "Prince Charming / Ugly Step Sister",
+      "company": "Blue Box Entertainment",
+      "director": "Abi Finley"
+    },
+    {
+      "year": 2015,
+      "type": "Television Documentary",
+      "production": "Secret History – London’s Lost Graveyard",
+      "role": "Violent Man (re-enactment)",
+      "company": "True North Productions",
+      "director": "Kenny Scott"
+    },
+    {
+      "year": 2014,
+      "type": "Feature Film",
+      "production": "Guardians of the Galaxy",
+      "role": "Alien (Prosthetics)",
+      "company": "Marvel",
+      "director": "James Gunn"
+    },
+    {
+      "year": 2013,
+      "type": "Television Series",
+      "production": "Mr Selfridge",
+      "role": "Club Goer",
+      "company": "ITV Studios",
+      "director": "Anthony Byrne"
+    },
+    {
+      "year": 2012,
+      "type": "Television Series",
+      "production": "Call the Midwife",
+      "role": "Teddy Boy",
+      "company": "BBC / Neal Street Productions",
+      "director": "Roger Goldby"
+    },
+    {
+      "year": 2012,
+      "type": "Short Film",
+      "production": "Konnichiwa Brick Lane",
+      "role": "Andrew (Japanese-speaking)",
+      "company": null,
+      "director": "Saera Jin"
+    },
+    {
+      "year": 2011,
+      "type": "Musical Theatre",
+      "production": "Grease 2: Live in Concert",
+      "role": "Ensemble",
+      "company": "StageArt",
+      "director": "Karl McNamara"
+    },
+    {
+      "year": 2011,
+      "type": "Musical Theatre",
+      "production": "You’re a Good Man, Charlie Brown",
+      "role": "Charlie Brown",
+      "company": "Players Theatre Company",
+      "director": "Ryan Purdy"
+    },
+    {
+      "year": 2010,
+      "type": "Musical Theatre",
+      "production": "Hot Mikado",
+      "role": "Koko",
+      "company": "Players Theatre Company",
+      "director": "Mel Trickey"
+    },
+    {
+      "year": 2009,
+      "type": "Musical Theatre",
+      "production": "Joseph and the Amazing Technicolor Dreamcoat",
+      "role": "Naphtali / Ensemble",
+      "company": "SCERA Shell, Utah USA",
+      "director": "Jeremy Showgren"
+    }
+]
