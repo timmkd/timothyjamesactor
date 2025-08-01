@@ -6,7 +6,6 @@ const VideoCard = ({ video }: { video: Video }) => (
       <iframe
         src={`${video.embedUrl}?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0`}
         className="w-full h-full"
-        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
         title={video.title}

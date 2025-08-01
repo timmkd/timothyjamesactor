@@ -1,4 +1,10 @@
 import { content } from "@/lib/content";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Timothy James - Actor",
+  description: "Learn about Timothy James, a professional actor based in Melbourne. View skills, training, and personal details.",
+};
 
 export default function AboutPage() {
   return (

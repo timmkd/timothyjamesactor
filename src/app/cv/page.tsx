@@ -39,7 +39,7 @@ export default function CVPage() {
     }
 
     return sorted;
-  }, [sortBy]);
+  }, [sortBy, typeOrder]);
 
   // Group credits by type for the type view, maintaining the specified order
   const creditsByType = useMemo(() => {
@@ -53,7 +53,7 @@ export default function CVPage() {
       }
     });
     return grouped;
-  }, [sortedCredits, sortBy, uniqueTypes]);
+  }, [sortedCredits, sortBy, uniqueTypes, typeOrder]);
 
   return (
     <div className="min-h-screen bg-gray-50">

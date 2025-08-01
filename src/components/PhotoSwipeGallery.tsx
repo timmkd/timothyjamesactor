@@ -63,6 +63,7 @@ export default function PhotoSwipeGallery({
       });
 
       lightbox.on("uiRegister", function () {
+        if (!lightbox.ui) return;
         lightbox.ui.registerElement({
           name: "custom-caption",
           order: 9,

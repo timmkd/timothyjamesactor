@@ -1,4 +1,10 @@
 import { content } from "@/lib/content";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact - Timothy James Actor",
+  description: "Contact Timothy James for acting bookings through Campos Talent Management. Professional representation in Melbourne.",
+};
 
 export default function ContactPage() {
   const socialLinks = [
