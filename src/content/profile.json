@@ -2,7 +2,7 @@
   "name": "Timothy James",
   "pronouns": "He/Him",
   "gender": "Male",
-  "ageRange": "25–47",
+  "ageRange": "30–47",
   "heightCm": 179,
   "baseLocation": "Melbourne, Australia",
   "nationality": "Australian",
@@ -15,9 +15,9 @@
     "email": "contact@campostalent.com",
     "website": "https://www.campostalent.com"
   },
-  "summary": "Versatile Australian actor and tenor with 15+ years' professional experience across film, television, musical theatre, commercial and corporate projects in Australia, the UK and the US. Screen credits include Guardians of the Galaxy, Star Wars: Rogue One and BBC's Call the Midwife; stage highlights include Les Miserables, Seussical and Next to Normal. Known for an engaging stage presence, strong comic timing and a wide vocal range (tenor). Fluent in English and conversational Japanese, with a repertoire of Australian, RP, Cockney and Standard American accents.",
+  "summary": "Versatile Australian actor with 15+ years' professional experience across film, television, musical theatre, commercial and corporate projects in Australia, the UK and the US. Screen credits include <em>Guardians of the Galaxy</em>, <em>Star Wars: Rogue One</em> and BBC's <em>Call the Midwife</em>; stage highlights include <em>Les Miserables</em>, <em>Seussical the Musical</em> and <em>Next to Normal</em>. Known for an engaging stage presence, comic timing and a wide vocal range (tenor). Also a Japanese speaker, with a repertoire of Australian, RP, Cockney and Standard American accents.",
   "physical": {
-    "hairColor": "Light Brown / Blonde",
+    "hairColor": "Brown",
     "eyeColor": "Brown"
   },
   "languages": ["English", "Japanese"],
@@ -29,10 +29,12 @@
   ],
   "skills": [
     "Actor",
-    "Musical Theatre Performer",
-    "Professional Singer (Tenor)",
-    "Commercial Talent",
-    "Model"
+    "Musical Theatre",
+    "Singer (Tenor)",
+    "CrossFit Athlete",
+    "Endurance Runner",
+    "Cycling",
+    "Programmer"
   ],
   "singingRange": "Tenor"
 }

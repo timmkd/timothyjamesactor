@@ -18,7 +18,7 @@
     {
       "year": 2022,
       "type": "Musical Theatre",
-      "production": "Les Miserables",
+      "production": "Les Misérables",
       "role": "Thenardier",
       "company": "MDMS",
       "director": "Anne Dewar"
@@ -73,16 +73,24 @@
     },
     {
       "year": 2015,
-      "type": "Musical Theatre (UK Tour)",
-      "production": "Cinderella – Pantomime",
+      "type": "Musical Theatre",
+      "production": "Cinderella (UK Tour) – Pantomime",
       "role": "Prince Charming / Ugly Step Sister",
       "company": "Blue Box Entertainment",
       "director": "Abi Finley"
     },
     {
+      "year": 2014,
+      "type": "Musical Theatre",
+      "production": "Cinderella (UK Tour) – Pantomime",
+      "role": "Furry Dog Father",
+      "company": "Blue Box Entertainment",
+      "director": "Abi Finley"
+    },
+    {
       "year": 2015,
-      "type": "Television Documentary",
-      "production": "Secret History – London’s Lost Graveyard",
+      "type": "Television",
+      "production": "Secret History (Documentary) – London's Lost Graveyard",
       "role": "Violent Man (re-enactment)",
       "company": "True North Productions",
       "director": "Kenny Scott"
@@ -97,7 +105,7 @@
     },
     {
       "year": 2013,
-      "type": "Television Series",
+      "type": "Television",
       "production": "Mr Selfridge",
       "role": "Club Goer",
       "company": "ITV Studios",
@@ -105,7 +113,7 @@
     },
     {
       "year": 2012,
-      "type": "Television Series",
+      "type": "Television",
       "production": "Call the Midwife",
       "role": "Teddy Boy",
       "company": "BBC / Neal Street Productions",
@@ -130,7 +138,7 @@
     {
       "year": 2011,
       "type": "Musical Theatre",
-      "production": "You’re a Good Man, Charlie Brown",
+      "production": "You're a Good Man, Charlie Brown",
       "role": "Charlie Brown",
       "company": "Players Theatre Company",
       "director": "Ryan Purdy"
