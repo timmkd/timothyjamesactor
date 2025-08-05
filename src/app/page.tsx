@@ -126,8 +126,11 @@ export default function Home() {
                 className="text-xl text-gray-600 mb-4"
                 dangerouslySetInnerHTML={{ __html: content.profile.summary }}
               />
-              <p className="text-lg text-blue-600 font-medium mb-8">
-                Dad • Actor • Web Developer • Sometimes Japanese Speaker
+              <p className="text-lg text-blue-600 font-medium mb-4">
+                Actor • Dad • Japanese Speaker • Tech Geek
+              </p>
+              <p className="text-gray-700 mb-8">
+                Age range: 30-47 | Based: Melbourne | Available globally
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                 <Link
@@ -140,7 +143,7 @@ export default function Home() {
                   href="/videos"
                   className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition-colors"
                 >
-                  Watch Showreel
+                  Watch showreel
                 </Link>
               </div>
             </div>
@@ -162,6 +165,39 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Industry Experience Section */}
+      <div className="py-12 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Industry experience
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <h3 className="text-3xl font-bold text-blue-600 mb-2">70+</h3>
+              <p className="text-gray-700">Film & TV Productions</p>
+              <p className="text-sm text-gray-500">UK & Australia</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Specialty performance</h3>
+              <p className="text-gray-700">Star Wars • Guardians • Horizon Zero Dawn</p>
+              <p className="text-sm text-gray-500">Prosthetic, creature & motion capture</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Stand-in Work</h3>
+              <p className="text-gray-700">Mission Impossible: Rogue Nation</p>
+              <p className="text-sm text-gray-500">& Multiple Productions</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Current role</h3>
+              <p className="text-gray-700">Web developer & script consultant</p>
+              <p className="text-sm text-gray-500">Twenty 2 Bridges</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Showreel Section */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -169,6 +205,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Latest showreel
             </h2>
+            <p className="text-gray-600">2024 character reel - 2:30</p>
           </div>
 
           <div className="bg-white rounded-lg shadow-sm overflow-hidden max-w-4xl mx-auto">

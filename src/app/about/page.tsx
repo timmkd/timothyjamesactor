@@ -17,7 +17,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-4">
             <p className="text-lg text-blue-600 font-medium">
-              Dad • Actor • Web Developer • Sometimes Japanese Speaker
+              Actor • Dad • Japanese Speaker • Tech Geek
             </p>
             <p className="text-sm text-gray-500 mt-2">
               Based in Melbourne, Australia
@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-3">
               <div>
-                <span className="font-medium text-gray-900">Age Range:</span>
+                <span className="font-medium text-gray-900">Age range:</span>
                 <span className="text-gray-600 ml-2">
                   {content.profile.ageRange}
                 </span>
@@ -46,7 +46,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <span className="font-medium text-gray-900">
-                  Base Location:
+                  Base location:
                 </span>
                 <span className="text-gray-600 ml-2">
                   {content.profile.baseLocation}
@@ -61,13 +61,13 @@ export default function AboutPage() {
             </div>
             <div className="space-y-3">
               <div>
-                <span className="font-medium text-gray-900">Hair Color:</span>
+                <span className="font-medium text-gray-900">Hair colour:</span>
                 <span className="text-gray-600 ml-2">
                   {content.profile.physical.hairColor}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Eye Color:</span>
+                <span className="font-medium text-gray-900">Eye colour:</span>
                 <span className="text-gray-600 ml-2">
                   {content.profile.physical.eyeColor}
                 </span>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <span className="font-medium text-gray-900">
-                  Singing Range:
+                  Singing range:
                 </span>
                 <span className="text-gray-600 ml-2">
                   {content.profile.singingRange}
@@ -95,9 +95,10 @@ export default function AboutPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             Professional summary
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            {content.profile.summary}
-          </p>
+          <p 
+            className="text-gray-700 leading-relaxed mb-4"
+            dangerouslySetInnerHTML={{ __html: content.profile.summary }}
+          />
           <p className="text-gray-700 leading-relaxed">
             With over 15 years of professional experience across multiple
             continents, Timothy has developed a versatile skill set that spans
@@ -155,10 +156,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Web developer</h3>
+                  <h3 className="font-medium text-gray-900">Tech geek</h3>
                   <p className="text-sm text-gray-600">
-                    Also working as a coder and web developer. Technical
-                    understanding for tech-focused roles and projects.
+                    Currently working as a full-time web developer. Perfect for
+                    authentic tech roles and awkward character types.
                   </p>
                 </div>
               </div>
@@ -337,11 +338,10 @@ export default function AboutPage() {
                 Teaching & mentoring
               </h3>
               <p className="text-gray-700 text-sm">
-                Timothy has shared his expertise as a teacher at The Actors
-                Centre in London, mentoring emerging actors and contributing to
-                the development of the next generation of performers. This
-                experience demonstrates his deep understanding of acting
-                techniques and his commitment to the craft.
+                Timothy taught at The Actors Centre in London from 2014-2016,
+                working with actors on technique and performance skills. This
+                teaching experience deepened his understanding of different
+                acting methodologies.
               </p>
             </div>
             <div className="bg-gray-50 p-4 rounded-lg">

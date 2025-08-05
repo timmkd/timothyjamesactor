@@ -13,6 +13,7 @@ export default function CVPage() {
   const typeOrder = [
     "Feature Film",
     "Television",
+    "Video Game",
     "Musical Theatre",
     "Commercial",
     "Short Film",
@@ -65,9 +66,6 @@ export default function CVPage() {
                 <h1 className="text-3xl font-bold text-gray-900">
                   CV / Résumé
                 </h1>
-                <p className="mt-2 text-gray-600">
-                  Professional credits and experience
-                </p>
               </div>
               <div>
                 <label
@@ -129,6 +127,68 @@ export default function CVPage() {
                   ))}
                 </>
               )}
+            </div>
+          </div>
+        </div>
+
+        {/* Industry Experience Section */}
+        <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-lg shadow-sm mt-8 p-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Industry experience</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Specialty performance</h3>
+              <div className="space-y-3">
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <p className="font-medium text-gray-900">Star Wars: Rogue One (2016)</p>
+                  <p className="text-gray-700">Stormtrooper - Main trooper team</p>
+                </div>
+                <div className="border-l-4 border-purple-500 pl-4">
+                  <p className="font-medium text-gray-900">Pride and Prejudice and Zombies (2016)</p>
+                  <p className="text-gray-700">Featured zombie - Extensive prosthetic performance</p>
+                </div>
+                <div className="border-l-4 border-green-500 pl-4">
+                  <p className="font-medium text-gray-900">Guardians of the Galaxy (2014)</p>
+                  <p className="text-gray-700">Alien - Prosthetic performance</p>
+                </div>
+                <div className="border-l-4 border-red-500 pl-4">
+                  <p className="font-medium text-gray-900">Call the Midwife (BBC, 2013)</p>
+                  <p className="text-gray-700">Featured period background</p>
+                </div>
+                <div className="border-l-4 border-orange-500 pl-4">
+                  <p className="font-medium text-gray-900">Horizon Zero Dawn: Frozen Wilds (2017)</p>
+                  <p className="text-gray-700">3D character modeling & motion capture</p>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Production experience</h3>
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <p className="text-3xl font-bold text-blue-600">70+</p>
+                    <p className="text-gray-700">Productions</p>
+                    <p className="text-sm text-gray-500">UK & Australia</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-purple-600">Stand-in work</p>
+                    <p className="text-gray-700">Mission Impossible</p>
+                    <p className="text-sm text-gray-500">& multiple productions</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Current industry role</h3>
+                <p className="font-medium text-gray-900">
+                  <a href="https://www.twenty2bridges.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                    Twenty 2 Bridges
+                  </a>
+                </p>
+                <p className="text-gray-700">Web developer & script consultant</p>
+                <p className="text-sm text-gray-500 mt-2">Combining technical expertise with creative consultation</p>
+              </div>
             </div>
           </div>
         </div>
