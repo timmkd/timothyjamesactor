@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/tripletaketim", label: "#TripleTakeTim" },
+    // { href: "/tripletaketim", label: "#TripleTakeTim" }, // Hidden until ready
     { href: "/videos", label: "Videos" },
     { href: "/images", label: "Images" },
     { href: "/cv", label: "CV" },
