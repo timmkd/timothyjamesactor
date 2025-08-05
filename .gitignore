@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Ignore large files for GitHub
+public/source_images/headshots/platinum-b-headshot.png
+public/source_images/headshots/Timothy James - glasses.png
