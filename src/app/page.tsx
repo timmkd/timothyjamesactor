@@ -168,6 +168,30 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Showreel Section */}
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Latest showreel
+            </h2>
+            <p className="text-gray-600">2024 character reel - 2:30</p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-sm overflow-hidden max-w-4xl mx-auto">
+            <div className="aspect-video relative">
+              <iframe
+                src="https://player.vimeo.com/video/1066502106?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0"
+                className="w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title="Timothy James Showreel - March 2025"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Industry Experience Section */}
       <div className="py-12 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -188,7 +212,7 @@ export default function Home() {
               <p className="text-sm text-gray-500">Prosthetic, creature & motion capture</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Stand-in Work</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Stand-in work</h3>
               <p className="text-gray-700">Mission Impossible: Rogue Nation</p>
               <p className="text-sm text-gray-500">& Multiple Productions</p>
             </div>
@@ -196,30 +220,6 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Current role</h3>
               <p className="text-gray-700">Web developer & script consultant</p>
               <p className="text-sm text-gray-500">Twenty 2 Bridges</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Showreel Section */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Latest showreel
-            </h2>
-            <p className="text-gray-600">2024 character reel - 2:30</p>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-sm overflow-hidden max-w-4xl mx-auto">
-            <div className="aspect-video relative">
-              <iframe
-                src="https://player.vimeo.com/video/1066502106?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0"
-                className="w-full h-full"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="Timothy James Showreel - March 2025"
-              />
             </div>
           </div>
         </div>
