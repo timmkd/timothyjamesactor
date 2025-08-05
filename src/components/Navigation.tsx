@@ -26,7 +26,7 @@ const Navigation = () => {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-xl font-bold text-gray-900">
                 Timothy James{" "}
-                <span className="text-lg font-medium text-gray-600">Actor</span>
+                <span className="text-lg font-medium text-gray-600 ml-2">Actor</span>
               </Link>
             </div>
           </div>
