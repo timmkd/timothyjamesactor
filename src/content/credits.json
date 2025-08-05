@@ -162,6 +162,14 @@
     {
       "year": 2009,
       "type": "Musical Theatre",
+      "production": "Calamity Jane",
+      "role": "Pete",
+      "company": "Babirra",
+      "director": "Paul Watson"
+    },
+    {
+      "year": 2009,
+      "type": "Musical Theatre",
       "production": "Joseph and the Amazing Technicolor Dreamcoat",
       "role": "Naphtali / Ensemble",
       "company": "SCERA Shell, Utah USA",
