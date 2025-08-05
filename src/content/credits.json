@@ -74,6 +74,14 @@
     {
       "year": 2016,
       "type": "Feature Film",
+      "production": "Pride and Prejudice and Zombies",
+      "role": "Zombie (Prosthetics)",
+      "company": "Cross Creek Pictures",
+      "director": "Burr Steers"
+    },
+    {
+      "year": 2016,
+      "type": "Feature Film",
       "production": "Star Wars: Rogue One",
       "role": "Stormtrooper",
       "company": "Lucasfilm",
@@ -110,14 +118,6 @@
       "role": "Alien (Prosthetics)",
       "company": "Marvel",
       "director": "James Gunn"
-    },
-    {
-      "year": 2013,
-      "type": "Television",
-      "production": "Mr Selfridge",
-      "role": "Club Goer",
-      "company": "ITV Studios",
-      "director": "Anthony Byrne"
     },
     {
       "year": 2012,
