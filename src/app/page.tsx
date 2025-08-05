@@ -120,7 +120,7 @@ export default function Home() {
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                Tim McDonald{" "}
+                Timothy James{" "}
                 <span className="text-3xl md:text-4xl font-medium text-gray-600">
                   Actor
                 </span>
