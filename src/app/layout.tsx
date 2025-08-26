@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-plus-jakarta",
+});
 
 export const metadata: Metadata = {
   title: "Timothy James - Actor",
   description:
-    "Professional actor portfolio featuring credits, headshots, showreels, and contact information.",
+    "Actor with 70+ productions across Australia and the UK. Dad, Japanese speaker and tech geek. Highlights include Guardians of the Galaxy, Rogue One and Les Misérables. Showreel, credits and bookings.",
 };
 
 export default function RootLayout({
@@ -18,27 +22,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${jakarta.className} bg-[--color-background] text-[--color-foreground]`}
+      >
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-grow">{children}</main>
-          <footer className="bg-gray-900 text-white">
+          <footer className="bg-[--color-surface] text-[--color-foreground] ring-1 ring-[--color-border]/40">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {/* Brand Section */}
                 <div className="col-span-1 md:col-span-2">
                   <h3 className="text-2xl font-bold mb-4">Timothy James</h3>
-                  <p className="text-gray-300 mb-6 max-w-md">
-                    Dad, Actor, Web Developer & sometimes Japanese Speaker.
-                    Professional actor based in Melbourne, available for
-                    bookings worldwide.
+                  <p className="mb-6 max-w-2xl text-[--color-muted]">
+                    Represented by Campos Talent · Bookings: Lisa Campos ·
+                    contact@campostalent.com
                   </p>
                   <div className="flex space-x-4">
                     <a
                       href="https://instagram.com/timmkd"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       aria-label="Instagram"
                     >
                       <svg
@@ -53,7 +58,7 @@ export default function RootLayout({
                       href="https://www.facebook.com/tim.mkdonald"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       aria-label="Facebook"
                     >
                       <svg
@@ -68,7 +73,7 @@ export default function RootLayout({
                       href="https://www.youtube.com/@timothyjamesactor"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       aria-label="YouTube"
                     >
                       <svg
@@ -81,7 +86,7 @@ export default function RootLayout({
                     </a>
                     <a
                       href="mailto:contact@campostalent.com"
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       aria-label="Email"
                     >
                       <svg
@@ -108,7 +113,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="/about"
-                        className="text-gray-300 hover:text-white transition-colors"
+                        className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       >
                         About
                       </a>
@@ -116,7 +121,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="/cv"
-                        className="text-gray-300 hover:text-white transition-colors"
+                        className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       >
                         CV
                       </a>
@@ -124,7 +129,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="/images"
-                        className="text-gray-300 hover:text-white transition-colors"
+                        className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       >
                         Images
                       </a>
@@ -132,7 +137,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="/videos"
-                        className="text-gray-300 hover:text-white transition-colors"
+                        className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
                       >
                         Videos
                       </a>
@@ -143,11 +148,11 @@ export default function RootLayout({
                 {/* Contact Info */}
                 <div>
                   <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                  <ul className="space-y-2 text-gray-300">
+                  <ul className="space-y-2 text-[--color-muted]">
                     <li>
                       <a
                         href="/contact"
-                        className="hover:text-white transition-colors"
+                        className="hover:text-[--color-foreground] transition-colors"
                       >
                         Booking Information
                       </a>
@@ -155,7 +160,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="mailto:contact@campostalent.com"
-                        className="hover:text-white transition-colors"
+                        className="hover:text-[--color-foreground] transition-colors"
                       >
                         Email
                       </a>
@@ -165,7 +170,7 @@ export default function RootLayout({
                         href="https://linktr.ee/timothyjamesactor"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-white transition-colors"
+                        className="hover:text-[--color-foreground] transition-colors"
                       >
                         Linktree
                       </a>
@@ -175,8 +180,8 @@ export default function RootLayout({
               </div>
 
               {/* Bottom Bar */}
-              <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p className="text-gray-400 text-sm">
+              <div className="border-t border-[--color-border] mt-8 pt-8 text-center">
+                <p className="text-sm text-[--color-muted]">
                   © {new Date().getFullYear()} Timothy James. All rights
                   reserved.
                 </p>

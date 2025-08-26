@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact - Timothy James Actor",
-  description: "Contact Timothy James for acting bookings through Campos Talent Management. Professional representation in Melbourne.",
+  description:
+    "Contact Timothy James for acting bookings through Campos Talent Management. Professional representation in Melbourne.",
 };
 
 export default function ContactPage() {
@@ -38,48 +39,52 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[--color-background] text-[--color-foreground]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Contact</h1>
-          <p className="mt-2 text-gray-600">
+          <h1 className="text-3xl font-bold text-[--color-foreground]">
+            Contact
+          </h1>
+          <p className="mt-2 text-[--color-muted]">
             Get in touch for bookings and inquiries
           </p>
         </div>
 
         {/* Agent Information */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Agent</h2>
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
+            Agent
+          </h2>
           <div className="space-y-3">
             <div>
-              <h3 className="font-medium text-gray-900">
+              <h3 className="font-medium text-[--color-foreground]">
                 {content.profile.agent.name}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-[--color-muted]">
                 {content.profile.agent.contactName}
               </p>
             </div>
             <div>
-              <p className="text-gray-600">
+              <p className="text-[--color-muted]">
                 <span className="font-medium">Phone:</span>{" "}
                 {content.profile.agent.phone}
               </p>
-              <p className="text-gray-600">
+              <p className="text-[--color-muted]">
                 <span className="font-medium">Email:</span>{" "}
                 <a
                   href={`mailto:${content.profile.agent.email}`}
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-[--color-accent] hover:opacity-90"
                 >
                   {content.profile.agent.email}
                 </a>
               </p>
-              <p className="text-gray-600">
+              <p className="text-[--color-muted]">
                 <span className="font-medium">Website:</span>{" "}
                 <a
                   href={content.profile.agent.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-[--color-accent] hover:opacity-90"
                 >
                   {content.profile.agent.website}
                 </a>
@@ -89,8 +94,8 @@ export default function ContactPage() {
         </div>
 
         {/* Social Media Links */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Follow & connect
           </h2>
           <div className="flex flex-wrap gap-4">
@@ -100,7 +105,7 @@ export default function ContactPage() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 rounded-md ring-1 ring-[--color-border]/50 text-[--color-foreground] hover:bg-[--color-background] transition-colors"
               >
                 {link.icon}
                 <span>{link.name}</span>
@@ -110,18 +115,19 @@ export default function ContactPage() {
         </div>
 
         {/* Booking Information */}
-        <div className="bg-blue-50 rounded-lg p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-2">
+        <div className="card card-hover p-6">
+          <h2 className="text-lg font-semibold text-[--color-foreground] mb-2">
             Booking information
           </h2>
-          <p className="text-gray-600 mb-4">
+          <p className="text-[--color-foreground]/90 mb-4">
             For all professional bookings, please contact the agent directly.
             For general inquiries or media requests, feel free to reach out
             through social media channels.
           </p>
-          <p className="text-gray-600">
-            <strong>Available for:</strong> Film, Television, Theatre,
-            Commercials, Corporate Training, Voice-over, and Modelling.
+          <p className="text-[--color-foreground]">
+            <span className="font-semibold">Available for:</span> Film,
+            Television, Theatre, Commercials, Corporate Training, Voice-over,
+            and Modelling.
           </p>
         </div>
       </div>

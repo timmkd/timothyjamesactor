@@ -35,17 +35,17 @@ This document outlines the plan for building a personal portfolio website for th
     - Contact
     - `tripletaketim` (placeholder page)
   - Develop reusable React components for displaying content (e.g., a `CreditRow` component for the CV grid).
-- [ ] 3. **Implement Features:**
+- [x] 3. **Implement Features:**
   - On the CV page, implement client-side controls for sorting (by Year) and grouping (by Type eg Musicals) the credits grid.
   - Add a dedicated section (e.g., in the footer or a contact page) to display social media and other professional links.
-- [ ] 4. **Styling:**
+- [x] 4. **Styling:**
   - Apply a clean, modern, and responsive design using Tailwind CSS.
 
 ### Phase 3: Deployment
 
-- [ ] 1. **Version Control:**
+- [x] 1. **Version Control:**
   - Push the project to a GitHub repository.
-- [ ] 2. **Continuous Deployment:**
+- [x] 2. **Continuous Deployment:**
   - Connect the GitHub repository to Netlify or Vercel.
   - Configure the deployment settings to automatically build and deploy the site whenever changes are pushed to the main branch.
 

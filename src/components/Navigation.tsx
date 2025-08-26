@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -19,33 +20,36 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-sm border-b">
+    <nav className="sticky top-0 z-50 backdrop-blur bg-[--color-surface]/90 ring-1 ring-[--color-border]/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-xl font-bold text-gray-900">
                 Timothy James{" "}
-                <span className="text-lg font-medium text-gray-600 ml-2">Actor</span>
+                <span className="text-lg font-medium text-gray-600 ml-2">
+                  Actor
+                </span>
               </Link>
             </div>
           </div>
-          
+
           {/* Desktop Navigation */}
-          <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+          <div className="hidden sm:ml-6 sm:flex sm:space-x-4 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                className={`inline-flex items-center px-1 pt-1 text-sm ${
                   pathname === item.href
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "font-semibold text-[--color-accent]"
+                    : "text-gray-600 hover:text-gray-800"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -104,16 +108,19 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+                className={`block pl-3 pr-4 py-2 text-base font-medium rounded-md ${
                   pathname === item.href
-                    ? "bg-indigo-50 border-indigo-500 text-indigo-700"
-                    : "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800"
+                    ? "text-[--color-accent]"
+                    : "text-gray-700 hover:bg-black/5"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
+            <div className="px-3 pt-2">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       )}

@@ -19,46 +19,95 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Tech Stack
 - **Framework**: Next.js 15.4.4 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript with strict mode
+- **Styling**: Tailwind CSS v4 with PostCSS
 - **Content**: 
   - Local JSON files in `src/content/` (current)
   - Sanity CMS integration prepared but not yet active
-- **Image Gallery**: PhotoSwipe library
+- **Image Gallery**: PhotoSwipe library v5.4.4
+- **Image Processing**: Next.js optimized images with AVIF/WebP formats
 
 ### Project Structure
 - **src/app/**: Next.js app router pages
   - Each route has its own `page.tsx`
   - `layout.tsx` provides global layout with navigation and footer
   - `studio/` route configured for Sanity Studio (optional feature)
+  - `_preview/` and `preview/` routes for content preview
 - **src/components/**: Reusable React components
   - `CreditRow.tsx` - Displays individual credits in CV grid
   - `Navigation.tsx` - Site navigation
   - `PhotoSwipeGallery.tsx` - Image gallery component
-- **src/content/**: JSON data files
+  - `InlinePhotoSwipe.tsx` - Inline photo viewer
+  - `ThemeToggle.tsx` - Theme switching functionality
+- **src/content/**: JSON data files with typed interfaces
   - `credits.json` - Acting credits/CV data
   - `profile.json` - Actor profile information
   - `training.json` - Training/education data
   - `videos.json` - Video/reel links
   - `images.json` - Image gallery data
 - **src/lib/content.ts**: Content loading and utility functions
-  - Exports typed interfaces for all content
-  - Provides filtering functions for credits (by type, year, etc.)
+  - Exports typed interfaces for all content (Credit, Profile, Training, Video, Images)
+  - Provides filtering functions: `getCreditsByType()`, `getCreditsByYear()`, `getCreditsByYearRange()`
+  - Utility functions: `getUniqueCreditTypes()`, `getUniqueYears()`
+- **src/sanity/**: Sanity CMS configuration (optional)
+  - `env.ts`, `lib/client.ts` - Sanity client setup
+  - `schemaTypes/` - Content schemas
+- **src/schemas/**: TypeScript schemas for Sanity content types
+
+### Content Management
+- **Current**: Content stored in JSON files in `src/content/`
+- **Future**: Sanity CMS integration ready with schemas in `src/schemas/`
+- **Images**: Stored in `public/` for static serving, with source images in `source_images/`
+- **Migration**: Use `importCredits.js` and `uploadImages.js` for Sanity migration
 
 ### Key Features
-- Actor portfolio with multiple pages: Home, CV, Images, Videos, Contact
-- CV page needs implementation of sorting/grouping controls
-- Social media links in footer
-- Responsive design with Tailwind CSS
+- Actor portfolio with multiple pages: Home, About, CV, Images, Videos, Contact
+- CV page with chronological credit display
+- Image gallery with PhotoSwipe integration
+- Video/reel showcase with embedded players
+- Responsive design optimized for all devices
+- Sanity Studio integration at `/studio` route
 
-### Sanity CMS (Optional)
-- Configuration exists in `sanity.config.ts` and `src/sanity/`
-- Schemas defined in `src/schemas/`
-- Currently not active - content served from JSON files
-- Migration to Sanity is Phase 4 of the project plan
+### Development Status (from PROJECT_PLAN.md)
+- **Phase 1**: Complete - Project setup and content preparation
+- **Phase 2**: 
+  - Items 1-2: Complete - Content loading and page structure
+  - Item 3: Pending - CV sorting/grouping controls implementation
+  - Item 4: Pending - Final styling refinements
+- **Phase 3**: Pending - Deployment setup
+- **Phase 4**: Pending - Optional Sanity CMS migration
+
+### Card System & Layout Patterns
+- **Card Component**: Use `.card` class for consistent surface styling across the site
+  - Base: `card` - provides background, border, shadow, and rounded corners
+  - Interactive: `card-hover` - adds hover shadow transition
+  - Defined in `src/app/globals.css:70-77`
+- **Card Usage Patterns**:
+  - Content sections: `<div className="card card-hover p-6">` 
+  - Navigation cards: `<Link className="group block card card-hover p-6">`
+  - Data rows: Custom styling with hover states (see `CreditRow.tsx:9`)
+  - Hero video: `<div className="card">` for embedded content
+- **Layout Structure**:
+  - Global: Min-height screen with flex column layout (`layout.tsx:28-30`)
+  - Container: `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8` for content width
+  - Grid system: Responsive grids for content sections (1/2/3/4 column layouts)
+  - Footer: 4-column grid with brand, links, and contact info
+
+### Color System & Theme Support
+- **CSS Custom Properties**: Theme-aware colors using `--color-*` variables
+- **Theme Toggle**: Light/dark theme support with `data-theme` attribute
+- **Color Tokens**: 
+  - `--color-background`: Page canvas
+  - `--color-surface`: Card backgrounds  
+  - `--color-foreground`: Primary text
+  - `--color-muted`: Secondary text
+  - `--color-accent`: Brand accent (teal)
+  - `--color-border`: Borders and dividers
 
 ## Development Notes
-- The project follows the plan in `PROJECT_PLAN.md`
-- Phase 2 items 3-4 still need implementation (CV controls and styling)
-- When implementing CV controls, use the utility functions in `src/lib/content.ts`
-- Image files should be placed in `public/` directory for static serving
+- When implementing CV controls, use utility functions in `src/lib/content.ts:86-104`
+- Image optimization configured for multiple formats and sizes in `next.config.ts:4-8`
+- ESLint configured with Next.js core web vitals and TypeScript rules
+- Follow existing component patterns when adding new features
+- **Card Consistency**: Always use `.card` and `.card-hover` classes for new UI components
+- **Grid Layouts**: Use responsive grid patterns consistent with existing pages

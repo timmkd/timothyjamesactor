@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -12,12 +11,14 @@ interface PhotoSwipeGalleryProps {
   images: ImageItem[];
   title: string;
   galleryID: string;
+  layout?: "grid" | "masonry";
 }
 
 export default function PhotoSwipeGallery({
   images,
   title,
   galleryID,
+  layout = "grid",
 }: PhotoSwipeGalleryProps) {
   const lightboxRef = useRef<PhotoSwipe | null>(null);
 
@@ -121,30 +122,48 @@ export default function PhotoSwipeGallery({
 
   return (
     <div className="mb-12">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">{title}</h2>
+      <h2 className="text-2xl font-bold text-[--color-foreground] mb-6">
+        {title}
+      </h2>
       <div
-        className="photo-swipe-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        className={
+          layout === "masonry"
+            ? "photo-swipe-gallery columns-2 md:columns-3 lg:columns-4 gap-4 [&_a]:mb-4"
+            : "photo-swipe-gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        }
         data-gallery-id={galleryID}
       >
         {images.map((image, index) => (
           <a
             href={image.src}
             key={`${galleryID}-${index}`}
-            className="photo-swipe-image block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-all duration-200 group cursor-pointer"
+            className="photo-swipe-image block card card-hover overflow-hidden transition-all duration-200 group cursor-pointer"
           >
-            <div className="aspect-[3/4] relative bg-gray-100">
+            {layout === "masonry" ? (
               <Image
                 src={image.src}
                 alt={image.alt}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-200"
+                width={1200}
+                height={1600}
+                className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-200"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={index < 4}
               />
-            </div>
+            ) : (
+              <div className="aspect-[3/4] relative">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover group-hover:scale-[1.02] transition-transform duration-200"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index < 4}
+                />
+              </div>
+            )}
             {image.title && (
               <div className="p-3">
-                <h3 className="text-sm font-medium text-gray-900 truncate">
+                <h3 className="text-sm font-medium text-[--color-foreground] truncate">
                   {image.title}
                 </h3>
               </div>

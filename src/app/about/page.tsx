@@ -3,16 +3,19 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Timothy James - Actor",
-  description: "Learn about Timothy James, a professional actor based in Melbourne. View skills, training, and personal details.",
+  description:
+    "Learn about Timothy James, a professional actor based in Melbourne. View skills, training, and personal details.",
 };
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[--color-background] text-[--color-foreground]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">About</h1>
-          <p className="mt-2 text-gray-600">
+          <h1 className="text-3xl font-bold text-[--color-foreground]">
+            About
+          </h1>
+          <p className="mt-2 text-[--color-muted]">
             Professional background and personal details
           </p>
           <div className="mt-4">
@@ -26,63 +29,75 @@ export default function AboutPage() {
         </div>
 
         {/* Personal Details */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Personal details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-3">
               <div>
-                <span className="font-medium text-gray-900">Age range:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Age range:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.ageRange}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Height:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Height:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.heightCm}cm
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">
+                <span className="font-medium text-[--color-foreground]">
                   Base location:
                 </span>
-                <span className="text-gray-600 ml-2">
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.baseLocation}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Nationality:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Nationality:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.nationality}
                 </span>
               </div>
             </div>
             <div className="space-y-3">
               <div>
-                <span className="font-medium text-gray-900">Hair colour:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Hair colour:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.physical.hairColor}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Eye colour:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Eye colour:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.physical.eyeColor}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Ethnicity:</span>
-                <span className="text-gray-600 ml-2">
+                <span className="font-medium text-[--color-foreground]">
+                  Ethnicity:
+                </span>
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.ethnicity}
                 </span>
               </div>
               <div>
-                <span className="font-medium text-gray-900">
+                <span className="font-medium text-[--color-foreground]">
                   Singing range:
                 </span>
-                <span className="text-gray-600 ml-2">
+                <span className="text-[--color-muted] ml-2">
                   {content.profile.singingRange}
                 </span>
               </div>
@@ -91,15 +106,15 @@ export default function AboutPage() {
         </div>
 
         {/* Professional Summary */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Professional summary
           </h2>
-          <p 
-            className="text-gray-700 leading-relaxed mb-4"
+          <p
+            className="text-[--color-foreground] leading-relaxed mb-4"
             dangerouslySetInnerHTML={{ __html: content.profile.summary }}
           />
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-[--color-foreground] leading-relaxed">
             With over 15 years of professional experience across multiple
             continents, Timothy has developed a versatile skill set that spans
             classical theatre, contemporary film, and commercial work. His
@@ -110,8 +125,8 @@ export default function AboutPage() {
         </div>
 
         {/* Unique Branding */}
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             What makes me unique
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,8 +148,8 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Dad</h3>
-                  <p className="text-sm text-gray-600">
+                  <h3 className="font-medium text-[--color-foreground]">Dad</h3>
+                  <p className="text-sm text-[--color-muted]">
                     Bringing authentic family dynamics and relatability to roles
                   </p>
                 </div>
@@ -156,8 +171,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Tech geek</h3>
-                  <p className="text-sm text-gray-600">
+                  <h3 className="font-medium text-[--color-foreground]">
+                    Tech geek
+                  </h3>
+                  <p className="text-sm text-[--color-muted]">
                     Currently working as a full-time web developer. Perfect for
                     authentic tech roles and awkward character types.
                   </p>
@@ -182,10 +199,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">
+                  <h3 className="font-medium text-[--color-foreground]">
                     Japanese speaker
                   </h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-[--color-muted]">
                     Cultural versatility and language skills for international
                     projects
                   </p>
@@ -208,10 +225,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">
+                  <h3 className="font-medium text-[--color-foreground]">
                     Fitness enthusiast
                   </h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-[--color-muted]">
                     5 years CrossFit, half marathon runner - ready for
                     physically demanding roles
                   </p>
@@ -222,18 +239,20 @@ export default function AboutPage() {
         </div>
 
         {/* Skills */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Skills & specializations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-medium text-gray-900 mb-3">Skills</h3>
+              <h3 className="font-medium text-[--color-foreground] mb-3">
+                Skills
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {content.profile.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm [data-theme=dark]:bg-white/10 [data-theme=dark]:text-white"
                   >
                     {skill}
                   </span>
@@ -243,12 +262,14 @@ export default function AboutPage() {
             <div>
               <div className="space-y-3">
                 <div>
-                  <span className="font-medium text-gray-700">Languages:</span>
+                  <span className="font-medium text-[--color-foreground]">
+                    Languages:
+                  </span>
                   <div className="flex flex-wrap gap-2 mt-1">
                     {content.profile.languages.map((language, index) => (
                       <span
                         key={index}
-                        className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+                        className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm [data-theme=dark]:bg-white/10 [data-theme=dark]:text-white"
                       >
                         {language}
                       </span>
@@ -256,12 +277,14 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div>
-                  <span className="font-medium text-gray-700">Accents:</span>
+                  <span className="font-medium text-[--color-foreground]">
+                    Accents:
+                  </span>
                   <div className="flex flex-wrap gap-2 mt-1">
                     {content.profile.accents.map((accent, index) => (
                       <span
                         key={index}
-                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm [data-theme=dark]:bg-white/10 [data-theme=dark]:text-white"
                       >
                         {accent}
                       </span>
@@ -274,8 +297,8 @@ export default function AboutPage() {
         </div>
 
         {/* Training & Education */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6 mb-8">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Training & education
           </h2>
           <div className="space-y-4">
@@ -283,49 +306,53 @@ export default function AboutPage() {
               <div key={index} className="border-l-4 border-blue-500 pl-4">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="font-medium text-gray-900">{item.course}</h3>
-                    <p className="text-gray-600">{item.institution}</p>
+                    <h3 className="font-medium text-[--color-foreground]">
+                      {item.course}
+                    </h3>
+                    <p className="text-[--color-muted]">{item.institution}</p>
                   </div>
                   <span className="text-sm text-gray-500">{item.years}</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-1">{item.field}</p>
+                <p className="text-sm text-[--color-muted] mt-1">
+                  {item.field}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Career Highlights */}
-        <div className="bg-white rounded-lg shadow-sm p-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="card card-hover p-6">
+          <h2 className="text-xl font-semibold text-[--color-foreground] mb-4">
             Career highlights
           </h2>
           <div className="space-y-4">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-medium text-gray-900 mb-2">
+            <div className="bg-[--color-background] p-4 rounded-lg">
+              <h3 className="font-medium text-[--color-foreground] mb-2">
                 International experience
               </h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-[--color-foreground] text-sm">
                 Timothy has worked professionally in Australia, the United
                 Kingdom, and the United States, gaining valuable experience
                 across different markets and production styles.
               </p>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-medium text-gray-900 mb-2">
+            <div className="bg-[--color-background] p-4 rounded-lg">
+              <h3 className="font-medium text-[--color-foreground] mb-2">
                 Diverse portfolio
               </h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-[--color-foreground] text-sm">
                 From major Hollywood blockbusters like &ldquo;Guardians of the
                 Galaxy&rdquo; and &ldquo;Star Wars: Rogue One&rdquo; to intimate
                 theatre productions and commercial campaigns, Timothy&apos;s
                 work spans the full spectrum of performance media.
               </p>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-medium text-gray-900 mb-2">
+            <div className="bg-[--color-background] p-4 rounded-lg">
+              <h3 className="font-medium text-[--color-foreground] mb-2">
                 Musical theatre excellence
               </h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-[--color-foreground] text-sm">
                 With a strong foundation in musical theatre, Timothy has
                 performed leading roles in productions including &ldquo;Les
                 Misérables,&rdquo; &ldquo;Next to Normal,&rdquo; and
@@ -333,11 +360,11 @@ export default function AboutPage() {
                 and dramatic abilities.
               </p>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-medium text-gray-900 mb-2">
+            <div className="bg-[--color-background] p-4 rounded-lg">
+              <h3 className="font-medium text-[--color-foreground] mb-2">
                 Teaching & mentoring
               </h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-[--color-foreground] text-sm">
                 Timothy taught at The Actors Centre in London from 2014-2016,
                 working with actors on technique and performance skills. This
                 teaching experience deepened his understanding of different

@@ -12,6 +12,7 @@
       "Bash(git count-objects:*)",
       "Bash(git push:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }

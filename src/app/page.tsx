@@ -1,6 +1,6 @@
 import { content } from "@/lib/content";
 import Link from "next/link";
-import Image from "next/image";
+import InlinePhotoSwipe from "@/components/InlinePhotoSwipe";
 
 export default function Home() {
   const navigationCards = [
@@ -112,125 +112,140 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-white">
+    <div className="min-h-screen bg-[--color-background] text-[--color-foreground]">
+      {/* Hero Section with showreel primary (standard Vimeo poster) */}
+      <div className="bg-[--color-background]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                Timothy James{" "}
-                <span className="text-3xl md:text-4xl font-medium text-gray-600">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            {/* Showreel */}
+            <div className="lg:col-span-7 pt-2">
+              <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-sm card">
+                <iframe
+                  src={`https://player.vimeo.com/video/1066502106?title=0&byline=0&portrait=0`}
+                  className="w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="Timothy James Showreel"
+                />
+              </div>
+            </div>
+
+            {/* Text Content + Headshot */}
+            <div className="lg:col-span-5 text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold mb-3 text-[--color-foreground]">
+                Timothy James
+                <span className="block text-3xl md:text-4xl font-medium text-gray-600">
                   Actor
                 </span>
               </h1>
               <div
-                className="text-xl text-gray-600 mb-4"
-                dangerouslySetInnerHTML={{ __html: content.profile.summary }}
+                className="text-xl mb-3 text-[--color-muted]"
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "Melbourne-based actor with credits across film, TV and musical theatre. Dad, Japanese speaker and friendly tech geek. Highlights include <em>Guardians of the Galaxy</em>, <em>Rogue One</em> and BBC’s <em>Call the Midwife</em>.",
+                }}
               />
-              <p className="text-lg text-blue-600 font-medium mb-4">
-                Actor • Dad • Japanese Speaker • Tech Geek
+              <p className="text-lg font-medium mb-6 text-[--color-accent]">
+                Actor • Dad • Japanese speaker • Tech geek
               </p>
-              <p className="text-gray-700 mb-8">
-                Age range: 30-47 | Based: Melbourne | Available globally
-              </p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
                 <Link
                   href="/cv"
                   className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
                 >
-                  View CV
+                  View credits
                 </Link>
                 <Link
                   href="/videos"
-                  className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition-colors"
+                  className="px-6 py-3 rounded-md ring-1 ring-[--color-border]/60 hover:bg-[--color-background] transition-colors"
                 >
-                  Watch showreel
+                  More videos
                 </Link>
               </div>
-            </div>
-
-            {/* Headshot */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-xl">
-                <Image
+              <div className="flex items-center justify-center lg:justify-start gap-3">
+                <InlinePhotoSwipe
                   src="/source_images/headshots/Timothy James - glasses.png"
-                  alt="Timothy James - Professional Headshot"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
+                  alt="Timothy James headshot"
+                  width={64}
+                  height={64}
                 />
+                <span className="text-sm text-[--color-muted]">Headshot</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Showreel Section */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Latest showreel
-            </h2>
-            <p className="text-gray-600">2024 character reel - 2:30</p>
-          </div>
+      {/* Showreel moved to hero */}
 
-          <div className="bg-white rounded-lg shadow-sm overflow-hidden max-w-4xl mx-auto">
-            <div className="aspect-video relative">
-              <iframe
-                src="https://player.vimeo.com/video/1066502106?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0"
-                className="w-full h-full"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="Timothy James Showreel - March 2025"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Industry Experience Section */}
-      <div className="py-12 bg-gray-100">
+      {/* Additional Industry Experience Section */}
+      <div className="py-12 bg-[--color-background]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-[--color-foreground] mb-4">
               Additional industry experience
             </h2>
+            <p className="text-[--color-muted]">
+              Alongside acting, Timothy contributes across production and
+              specialty performance.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="text-3xl font-bold text-blue-600 mb-2">70+</h3>
-              <p className="text-gray-700">Film & TV Productions</p>
-              <p className="text-sm text-gray-500">UK & Australia</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="card p-6">
+              <div className="text-2xl mb-0 font-bold text-blue-600 [data-theme=dark]:text-[--color-accent]">
+                70+
+              </div>
+              <div className="font-bold mb-2 text-blue-600">Productions</div>
+              <div className="text-sm text-[--color-muted]">
+                Film, TV and theatre across Australia & the UK (including
+                featured background and stand‑in)
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Specialty performance</h3>
-              <p className="text-gray-700">Star Wars • Guardians • Horizon Zero Dawn</p>
-              <p className="text-sm text-gray-500">Prosthetic, creature & motion capture</p>
+            <div className="card p-6">
+              <div className="font-bold text-gray-900 [data-theme=dark]:text-[--color-foreground]">
+                Specialty performance
+              </div>
+              <div className="text-purple-600 mt-1 [data-theme=dark]:text-[--color-accent]">
+                Prosthetics / Creature / MoCap
+              </div>
+              <div className="text-sm text-[--color-muted]">
+                Star Wars, Guardians, Horizon Zero Dawn
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Stand-in work</h3>
-              <p className="text-gray-700">Mission Impossible: Rogue Nation</p>
-              <p className="text-sm text-gray-500">& Multiple Productions</p>
+            <div className="card p-6">
+              <div className="font-bold text-gray-900 [data-theme=dark]:text-[--color-foreground]">
+                Stand‑in work
+              </div>
+              <div className="text-red-600 mt-1 [data-theme=dark]:text-[--color-accent]">
+                Multiple productions
+              </div>
+              <div className="text-sm text-[--color-muted]">
+                Mission: Impossible and more
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Current role</h3>
-              <p className="text-gray-700">Web developer & script consultant</p>
-              <p className="text-sm text-gray-500">Twenty 2 Bridges</p>
+            <div className="card p-6">
+              <div className="font-bold text-gray-900 [data-theme=dark]:text-[--color-foreground]">
+                Current industry role
+              </div>
+              <div className="text-green-600 mt-1 [data-theme=dark]:text-[--color-accent]">
+                Twenty 2 Bridges
+              </div>
+              <div className="text-sm text-[--color-muted]">
+                Web developer & script consultant
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Navigation Cards */}
-      <div className="py-16 bg-white">
+      <div className="py-16 bg-[--color-background]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-3xl font-bold text-[--color-foreground] mb-4">
+              Explore
+            </h2>
+            <p className="text-lg text-[--color-muted]">
               Discover more about my work and experience
             </p>
           </div>
@@ -240,19 +255,17 @@ export default function Home() {
               <Link
                 key={card.title}
                 href={card.href}
-                className="group block bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
+                className="group block card card-hover p-6"
               >
                 <div className="flex items-center mb-4">
-                  <div
-                    className={`${card.color} text-white p-3 rounded-lg mr-4`}
-                  >
+                  <div className="p-3 rounded-lg mr-4 bg-transparent text-[--color-foreground] ring-1 ring-[--color-border]/50 group-hover:text-[--color-accent]">
                     {card.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-semibold text-[--color-foreground] group-hover:text-[--color-accent] transition-colors">
                     {card.title}
                   </h3>
                 </div>
-                <p className="text-gray-600">{card.description}</p>
+                <p className="text-[--color-muted]">{card.description}</p>
               </Link>
             ))}
           </div>
