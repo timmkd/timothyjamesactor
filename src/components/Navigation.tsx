@@ -11,7 +11,7 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    // { href: "/tripletaketim", label: "#TripleTakeTim" }, // Hidden until ready
+    { href: "/tripletaketim", label: "#TripleTakeTim" },
     { href: "/videos", label: "Videos" },
     { href: "/images", label: "Images" },
     { href: "/cv", label: "CV" },
@@ -41,7 +41,9 @@ const Navigation = () => {
                 key={item.href}
                 href={item.href}
                 className={`inline-flex items-center px-1 pt-1 text-sm ${
-                  pathname === item.href
+                  item.href === "/tripletaketim"
+                    ? "font-bold text-purple-600 dark:text-purple-400"
+                    : pathname === item.href
                     ? "font-semibold text-[--color-accent]"
                     : "text-gray-600 hover:text-gray-800"
                 }`}
@@ -109,7 +111,9 @@ const Navigation = () => {
                 key={item.href}
                 href={item.href}
                 className={`block pl-3 pr-4 py-2 text-base font-medium rounded-md ${
-                  pathname === item.href
+                  item.href === "/tripletaketim"
+                    ? "font-bold text-purple-600 dark:text-purple-400"
+                    : pathname === item.href
                     ? "text-[--color-accent]"
                     : "text-gray-700 hover:bg-black/5"
                 }`}

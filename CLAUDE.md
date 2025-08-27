@@ -15,6 +15,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Path alias `@/*` maps to `./src/*`
 - No specific typecheck script exists - TypeScript errors surface during build
 
+## Analytics Setup
+
+### Implementation
+- **Platform**: Vercel Analytics + Vercel Speed Insights
+- **Custom Events**: Tracking #TripleTakeTim campaign interactions
+- **YouTube Analytics**: Built-in video engagement metrics via YouTube embeds
+
+### Components
+- `AnalyticsTracker.tsx` - Client component for custom event tracking
+- Vercel Analytics integrated in root layout
+- Custom events tracked:
+  - `tripletaketim_page_view` - Page visits
+  - `tripletaketim_video_play` - Video plays by month and take number
+  - `tripletaketim_hero_click` - Hero CTA interactions
+  - `tripletaketim_homepage_click` - Homepage section clicks
+  - `tripletaketim_month_view` - Monthly scene scroll tracking
+
+### UTM Strategy
+- UTM parameter guide in `UTM_STRATEGY.md`
+- Track casting director outreach effectiveness
+- Monitor social media campaign performance
+- Vercel Analytics automatically captures UTM parameters
+
 ## Architecture
 
 ### Tech Stack
@@ -95,7 +118,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Color System & Theme Support
 - **CSS Custom Properties**: Theme-aware colors using `--color-*` variables
-- **Theme Toggle**: Light/dark theme support with `data-theme` attribute
+- **Theme Toggle**: Light/dark theme support with `data-theme` attribute AND `dark` class
 - **Color Tokens**: 
   - `--color-background`: Page canvas
   - `--color-surface`: Card backgrounds  
@@ -103,6 +126,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - `--color-muted`: Secondary text
   - `--color-accent`: Brand accent (teal)
   - `--color-border`: Borders and dividers
+
+### Dark Mode Implementation
+- **Dual System**: The app sets both `data-theme` attribute and `dark` class on the HTML element
+- **CSS Selectors**: Use `[data-theme='dark']` for custom CSS, `dark:` prefix for Tailwind utilities
+- **Known Issue**: Tailwind gradient classes (`bg-gradient-*`) do NOT respect dark mode modifiers
+  - Problem: `dark:from-purple-950` doesn't override `from-purple-50` in gradients
+  - Solution: Use client-side theme detection for conditional rendering
+  - Example pattern:
+    ```tsx
+    // For components needing different gradients in dark mode
+    const [isDark, setIsDark] = useState(false);
+    useEffect(() => {
+      const checkDarkMode = () => {
+        setIsDark(document.documentElement.getAttribute('data-theme') === 'dark');
+      };
+      // Set up observer for theme changes
+    }, []);
+    
+    return <div className={isDark ? 'bg-gray-900' : 'bg-gradient-to-br from-purple-50 to-blue-50'}>
+    ```
+- **Best Practice**: For gradient backgrounds that need dark mode variants, use conditional rendering rather than Tailwind dark mode classes
 
 ## Development Notes
 - When implementing CV controls, use utility functions in `src/lib/content.ts:86-104`

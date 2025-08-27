@@ -1,8 +1,30 @@
+"use client";
+
 import { content } from "@/lib/content";
 import Link from "next/link";
 import InlinePhotoSwipe from "@/components/InlinePhotoSwipe";
+import { useEffect, useState } from "react";
+import { trackTripleTakeEvent } from "@/components/AnalyticsTracker";
 
 export default function Home() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDark(document.documentElement.hasAttribute('data-theme') && 
+                 document.documentElement.getAttribute('data-theme') === 'dark');
+    };
+    
+    checkDarkMode();
+    
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, { 
+      attributes: true, 
+      attributeFilter: ['data-theme'] 
+    });
+    
+    return () => observer.disconnect();
+  }, []);
   const navigationCards = [
     {
       title: "About",
@@ -176,7 +198,98 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Showreel moved to hero */}
+      {/* #TripleTakeTim Campaign Section */}
+      <div className={`py-16 ${isDark ? 'bg-gray-900' : 'bg-gradient-to-br from-purple-50 to-blue-50'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+              What is #TripleTakeTim?
+            </h2>
+            <p className="text-xl text-[--color-muted] max-w-3xl mx-auto mb-2">
+              12 months of continued training, casting director connection, and brand building
+            </p>
+            <p className="text-lg text-[--color-muted] max-w-3xl mx-auto">
+              Every scene, triple takes.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            {/* Campaign Info */}
+            <div className="card card-hover p-8 flex flex-col">
+              <h3 className="text-2xl font-bold mb-4 text-[--color-foreground]">
+                July 2025 - August 2026
+              </h3>
+              <ul className="space-y-3 text-[--color-foreground] flex-grow">
+                <li className="flex items-start">
+                  <span className="text-purple-600 dark:text-purple-400 mr-3 text-xl">✓</span>
+                  <span>Every month post a new scene with three distinct takes</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 dark:text-purple-400 mr-3 text-xl">✓</span>
+                  <span>Send 3 takes of every scene to every audition (when appropriate)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 dark:text-purple-400 mr-3 text-xl">✓</span>
+                  <span>Connect with casting directors through consistent quality content</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 dark:text-purple-400 mr-3 text-xl">✓</span>
+                  <span>Continue to train and establish a professional brand</span>
+                </li>
+              </ul>
+              <div className="mt-6">
+                <Link
+                  href="/tripletaketim"
+                  className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition-colors font-medium"
+                  onClick={() => trackTripleTakeEvent.homepageSectionClick()}
+                >
+                  Enter #TripleTakeTim
+                  <svg
+                    className="ml-2 w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            
+            {/* Three Takes Preview */}
+            <div className="card p-8 flex flex-col justify-between h-full">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🎬</div>
+                <h3 className="text-2xl font-bold mb-2 text-[--color-foreground]">
+                  One Scene, Three Takes
+                </h3>
+                <p className="text-[--color-muted] mb-6">
+                  Exploring interpretation through character choices, objectives, and technique
+                </p>
+                <div className="flex justify-center space-x-4 text-sm">
+                  <div className="card p-3 bg-[--color-surface]">
+                    <div className="font-bold text-purple-600 dark:text-purple-400">Take 1</div>
+                  </div>
+                  <div className="card p-3 bg-[--color-surface]">
+                    <div className="font-bold text-blue-600 dark:text-blue-400">Take 2</div>
+                  </div>
+                  <div className="card p-3 bg-[--color-surface]">
+                    <div className="font-bold text-[--color-accent]">Take 3</div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm font-medium text-[--color-muted] mt-6 text-center">
+                Every month. Twelve months.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Additional Industry Experience Section */}
       <div className="py-12 bg-[--color-background]">

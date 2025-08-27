@@ -1,0 +1,76 @@
+{
+  "campaign": {
+    "title": "#TripleTakeTim",
+    "subtitle": "12 months of continued training, casting director connection, and brand building.",
+    "tagline": "Every scene, triple takes.",
+    "startDate": "2025-07",
+    "endDate": "2026-08",
+    "mission": [
+      "Every month post a new scene with three distinct takes",
+      "Send 3 takes of every scene to every audition (when appropriate)",
+      "Connect with casting directors through consistent quality content",
+      "Continue to train and establish a professional brand"
+    ],
+    "heroText": "Monthly scene work exploring character choices, objectives, and technique"
+  },
+  "scenes": [
+    {
+      "id": "august-2025",
+      "month": "August",
+      "year": 2025,
+      "title": "Woolongong",
+      "description": "Scene from the Australian TV movie \"Timothy\" (2014) - a former investment banker who lost everything in China reconnects with an old mate from 20 years ago in Wollongong, navigating shame, pride, and the awkwardness of vastly different life trajectories.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "odSzrdDT0l4",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "Fl0BRjaTiS0",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "vDylCmujy7Q",
+          "description": ""
+        }
+      ],
+      "learnings": "Explored how levels of acceptance, control vs. chaos, social investment, and presence vs. escape can be communicated through both performance choices and visual elements like hair, costume, and energy.",
+      "behindTheScenes": "Each take uses different visual storytelling approaches - hair, costume, and energy - to support the character's internal state and relationship to his circumstances."
+    },
+    {
+      "id": "july-2025",
+      "month": "July",
+      "year": 2025,
+      "title": "Bad News Bear",
+      "description": "Scene from \"The Bear\" - experimenting with costume, framing, and US accent work while maintaining consistent core tone across different visual presentations.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "TNHna8rO_PY",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "-EetTTI8UeM",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "kjS5aDTgqaU",
+          "description": ""
+        }
+      ],
+      "learnings": "Discovered how visual shifts (costume and framing) can affect delivery even when the core emotional tone remains consistent. Practiced US accent work across multiple takes.",
+      "behindTheScenes": "A fly joined the set during one take, which I incorporated into the scene as an improv moment!"
+    }
+  ]
+}

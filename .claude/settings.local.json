@@ -10,7 +10,12 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git count-objects:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:youtu.be)",
+      "WebFetch(domain:youtu.be)",
+      "WebFetch(domain:youtu.be)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

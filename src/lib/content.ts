@@ -3,6 +3,7 @@ import profile from '@/content/profile.json';
 import training from '@/content/training.json';
 import videos from '@/content/videos.json';
 import images from '@/content/images.json';
+import tripletaketim from '@/content/tripletaketim.json';
 
 export interface Credit {
   year: number;
@@ -74,12 +75,46 @@ export interface Images {
   productionImages: ImageItem[];
 }
 
+export interface TripleTakeVideo {
+  take: number;
+  label: string;
+  youtubeId: string;
+  description: string;
+}
+
+export interface TripleTakeScene {
+  id: string;
+  month: string;
+  year: number;
+  title: string;
+  description: string;
+  videos: TripleTakeVideo[];
+  learnings: string;
+  behindTheScenes: string;
+  isPlaceholder?: boolean;
+}
+
+export interface TripleTakeCampaign {
+  title: string;
+  subtitle: string;
+  startDate: string;
+  endDate: string;
+  mission: string[];
+  heroText: string;
+}
+
+export interface TripleTakeTimData {
+  campaign: TripleTakeCampaign;
+  scenes: TripleTakeScene[];
+}
+
 export const content = {
   credits: credits as Credit[],
   profile: profile as Profile,
   training: training as Training[],
   videos: videos as Videos,
   images: images as Images,
+  tripletaketim: tripletaketim as TripleTakeTimData,
 };
 
 // Utility functions for filtering and sorting credits
