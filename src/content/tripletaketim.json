@@ -15,6 +15,35 @@
   },
   "scenes": [
     {
+      "id": "september-2025",
+      "month": "September",
+      "year": 2025,
+      "title": "History of Bricks",
+      "description": "Scene from \"Still Up\" (Apple TV) - Alex calls Jamie after finally getting Poppy to sleep by reading The History of Bricks. He's proud, a little insecure, and holding on to the small wins.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "jnTXsHtP9e0",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "O8RnFK8r-CE",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "VeR3RM7F2rE",
+          "description": ""
+        }
+      ],
+      "learnings": "Played with how small external choices shift character energy. The tattoo sleeve and earring in Take 2 brought out Alex's different mood, while the straightforward US accent in Take 1 grounded him. Breaking self-tape convention with portrait framing in Take 3 created intimacy - the vertical format naturally pulled me closer to the camera, making the late-night call feel more real to me, possibly also paired with using my own accent.",
+      "behindTheScenes": "Shot all three takes in one session but completely reset between each - changing costume, adjusting lighting, and rotating the phone for Take 3. The portrait format was a risk but it mirrors how we actually FaceTimeand I enjoyed that intimacy."
+    },
+    {
       "id": "august-2025",
       "month": "August",
       "year": 2025,

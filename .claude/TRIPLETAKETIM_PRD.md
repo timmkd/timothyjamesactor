@@ -342,6 +342,22 @@ Establish a professional brand and connect with casting directors
 - **Simplified Take Labels**: Removed individual take descriptions in favor of clean "Take 1/2/3" labels - allows videos to speak for themselves without preconceptions
 - **Scene Context**: Main scene descriptions provide sufficient context while individual takes remain open to interpretation
 
+### Content Writing Tone Guidelines (September 2025)
+- **Learnings Section**: 
+  - Use active voice: "Played with..." rather than "Explored..."
+  - Be specific about discoveries without over-explaining
+  - Focus on what the actor experienced/felt rather than abstract concepts
+  - Include personal reactions: "...made the late-night call feel more real to me"
+  - Acknowledge when using own accent adds to authenticity
+  - Keep descriptions concrete and tangible
+
+- **Behind the Scenes Section**:
+  - Focus on practical production details
+  - Mention specific technical choices (portrait format, costume resets)
+  - Include personal enjoyment/reactions: "I enjoyed that intimacy"
+  - Keep it conversational and brief
+  - Avoid over-intellectualizing the process
+
 ### Technical Implementation  
 - **Component Modularity**: Separated concerns with TripleTakeHero, MonthlySceneCard, and VideoGrid for maximum reusability
 - **Content Management**: JSON-based system proven effective for monthly updates with YouTube integration
@@ -364,8 +380,8 @@ Establish a professional brand and connect with casting directors
 
 ---
 
-*Document Version: 3.1*
-*Last Updated: August 2025 (UI/UX refinements)*
+*Document Version: 3.2*
+*Last Updated: September 2025 (Content tone guidelines added)*
 *Campaign Status: DEVELOPMENT COMPLETE - Ready for Launch*
 *Campaign Duration: July 2025 - August 2026*
 *Author: Timothy James Actor Portfolio Team*
