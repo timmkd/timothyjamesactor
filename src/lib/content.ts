@@ -89,8 +89,8 @@ export interface TripleTakeScene {
   title: string;
   description: string;
   videos: TripleTakeVideo[];
-  learnings: string;
-  behindTheScenes: string;
+  whyThisScene: string;
+  technicalExploration: string;
   isPlaceholder?: boolean;
 }
 
