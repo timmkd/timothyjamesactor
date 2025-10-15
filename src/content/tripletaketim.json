@@ -15,6 +15,35 @@
   },
   "scenes": [
     {
+      "id": "october-2025",
+      "month": "October",
+      "year": 2025,
+      "title": "Karen Not Sharon",
+      "description": "An office chat goes off the rails when Greg realises he's been calling his co-worker by the wrong name… for their entire working relationship. Written and performed by Timothy James.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "SXvUMeYOI-Q",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "r3BjrMTJ9lU",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "wGcE-7NJ7Uc",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I wanted to do something original, comedic, and awkward — a character pushing for something even though he's clearly in the wrong. So I wrote this scene myself. Having spent a lot of time in workplaces, I've encountered these archetypes: the passive-aggressive talker, the mansplainer, the nervous wreck. This gave me a chance to explore all three in one ridiculous situation.",
+      "technicalExploration": "Rather than play with framing, I focused on the intentions. I used costuming to differentiate the office archetypes. I played with different rhythms, pacing, and levels of self-awareness to see how everyday awkwardness tips from relatable to ridiculous. In one take, I imagined an official complaint had been made and Greg was forced to apologise — which completely shifted the power dynamic."
+    },
+    {
       "id": "september-2025",
       "month": "September",
       "year": 2025,
@@ -40,8 +69,8 @@
           "description": ""
         }
       ],
-      "learnings": "Played with how small external choices shift character energy. The tattoo sleeve and earring in Take 2 brought out Alex's different mood, while the straightforward US accent in Take 1 grounded him. Breaking self-tape convention with portrait framing in Take 3 created intimacy - the vertical format naturally pulled me closer to the camera, making the late-night call feel more real to me, possibly also paired with using my own accent.",
-      "behindTheScenes": "Shot all three takes in one session but completely reset between each - changing costume, adjusting lighting, and rotating the phone for Take 3. The portrait format was a risk but it mirrors how we actually FaceTimeand I enjoyed that intimacy."
+      "whyThisScene": "When I saw this scene on Apple TV, I immediately wanted to play with it. Alex is literally talking about a book called The History of Bricks — it's super dorky, and as a dork myself, that landed. This piece let me explore a bit of vulnerability within a comedic context: a relatable dad-type trying a little too hard to impress. It fit perfectly into my \"dad/everyman with range\" brand, giving me the opportunity to play with levels of warmth and sometimes disconnect, awkward humour, and subtle insecurity.",
+      "technicalExploration": "Three distinct takes experimenting with how physical choices and framing shift character:\n\nTake 1: US Accent – Glasses and simple framing. Just a guy who genuinely loves bricks. Costuming allows for a bit more of a hipster feel. \n\nTake 2: US Accent – Added accessories (bracelets, earring) to see how props inform different character choices. Experimented with a different relationship to the offscreen character.\n\nTake 3: Australian Accent – Vertical phone format, shot as if it were an actual FaceTime call. This broke traditional self-tape convention and ended up feeling more personal, friendly, and fun."
     },
     {
       "id": "august-2025",
@@ -69,8 +98,8 @@
           "description": ""
         }
       ],
-      "learnings": "Explored how levels of acceptance, control vs. chaos, social investment, and presence vs. escape can be communicated through both performance choices and visual elements like hair, costume, and energy.",
-      "behindTheScenes": "Each take uses different visual storytelling approaches - hair, costume, and energy - to support the character's internal state and relationship to his circumstances."
+      "whyThisScene": "I picked this scene when I found it in a casting workshop. I really enjoyed the Aussie-ness of it, and the fact that the guy has had a literal nervous breakdown. It's a great scene to play around with — I could do a lot with the relationship. Being quite a niche scene, it's also original enough that I can explore it without any preconceptions.",
+      "technicalExploration": "Explored different levels of meltdown and self-awareness. Played with questions like: Was I embarrassed about the breakdown? Was I proud? How much did I care about how I looked? What was my relationship to Michael — did I want him there, want to impress him, or want him to leave?\n\nI used costuming and hair to show where I felt I was mentally in the scene. A dressing gown showed I really wasn't thinking about how I looked, while other costume choices reflected different levels of self-consciousness."
     },
     {
       "id": "july-2025",
@@ -98,8 +127,8 @@
           "description": ""
         }
       ],
-      "learnings": "Discovered how visual shifts (costume and framing) can affect delivery even when the core emotional tone remains consistent. Practiced US accent work across multiple takes.",
-      "behindTheScenes": "A fly joined the set during one take, which I incorporated into the scene as an improv moment!"
+      "whyThisScene": "I chose this scene from The Bear because apart from it being such a great show, it's packed with scenes that work in so many contexts. The scene between Carmy and Richie was performed with such depth — I knew I wanted to explore that, but in my own way. My rendition is completely different from the show, which is exactly what I was going for. I was using the script, not the setting.",
+      "technicalExploration": "Rather than focus too much on delivery variations, I decided to let framing, costume, and setting inform the scene. A fly interrupted one take, so I rolled with it and even grabbed some fly spray. I used a non-traditional shot lying down, played with a couch setup and decorative coffee table, and tried a standard white background with fake tattoo and similar accessories. These all created different tones without me having to shift the performance much at all."
     }
   ]
 }

@@ -14,8 +14,8 @@ interface Scene {
   title: string;
   description: string;
   videos: Video[];
-  learnings: string;
-  behindTheScenes: string;
+  whyThisScene: string;
+  technicalExploration: string;
   isPlaceholder?: boolean;
 }
 
@@ -52,26 +52,26 @@ const MonthlySceneCard = ({ scene }: MonthlySceneCardProps) => {
       />
 
       {/* Additional Content */}
-      {(scene.learnings || scene.behindTheScenes) && !scene.isPlaceholder && (
+      {(scene.whyThisScene || scene.technicalExploration) && !scene.isPlaceholder && (
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {scene.learnings && (
+          {scene.whyThisScene && (
             <div className="card p-6 bg-[--color-background]">
               <h4 className="font-bold text-[--color-foreground] mb-3">
-                What I Learned
+                Why This Scene
               </h4>
-              <p className="text-[--color-muted] text-sm leading-relaxed">
-                {scene.learnings}
+              <p className="text-[--color-muted] text-sm leading-relaxed whitespace-pre-line">
+                {scene.whyThisScene}
               </p>
             </div>
           )}
-          
-          {scene.behindTheScenes && (
+
+          {scene.technicalExploration && (
             <div className="card p-6 bg-[--color-background]">
               <h4 className="font-bold text-[--color-foreground] mb-3">
-                Behind the Scenes
+                Technical Exploration
               </h4>
-              <p className="text-[--color-muted] text-sm leading-relaxed">
-                {scene.behindTheScenes}
+              <p className="text-[--color-muted] text-sm leading-relaxed whitespace-pre-line">
+                {scene.technicalExploration}
               </p>
             </div>
           )}

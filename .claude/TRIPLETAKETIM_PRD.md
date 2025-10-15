@@ -342,21 +342,55 @@ Establish a professional brand and connect with casting directors
 - **Simplified Take Labels**: Removed individual take descriptions in favor of clean "Take 1/2/3" labels - allows videos to speak for themselves without preconceptions
 - **Scene Context**: Main scene descriptions provide sufficient context while individual takes remain open to interpretation
 
-### Content Writing Tone Guidelines (September 2025)
-- **Learnings Section**: 
-  - Use active voice: "Played with..." rather than "Explored..."
-  - Be specific about discoveries without over-explaining
-  - Focus on what the actor experienced/felt rather than abstract concepts
-  - Include personal reactions: "...made the late-night call feel more real to me"
-  - Acknowledge when using own accent adds to authenticity
-  - Keep descriptions concrete and tangible
+### Content Writing Tone Guidelines (September 2025 - Final Revision)
 
-- **Behind the Scenes Section**:
-  - Focus on practical production details
-  - Mention specific technical choices (portrait format, costume resets)
-  - Include personal enjoyment/reactions: "I enjoyed that intimacy"
-  - Keep it conversational and brief
-  - Avoid over-intellectualizing the process
+**Overall Tone:**
+- Conversational and personable - write like you're talking to a colleague, not writing a formal report
+- Use contractions, casual phrasing ("rolled with it," "packed with scenes," "super dorky")
+- Include genuine reactions and personal anecdotes (fly spray moment, dork self-identification)
+- Keep it authentic and human - you're an actor sharing process, not marketing yourself
+
+**Why This Scene Section:**
+  - Start with origin story: "When I saw..." or "I picked this when I found it in..."
+  - Explain what grabbed you personally (e.g., "it's super dorky, and as a dork myself, that landed" or "the guy has had a literal nervous breakdown")
+  - For well-known shows, acknowledge the source but emphasize your different approach (e.g., "My rendition is completely different from the show, which is exactly what I was going for. I was using the script, not the setting.")
+  - Articulate casting type alignment naturally ("dad/everyman with range," "everyday guy under pressure")
+  - Mention what made the scene workable (e.g., "great scene to play around with" or "I could do a lot with the relationship")
+  - For niche material, note it's "original enough that I can explore it without any preconceptions"
+  - Frame as exploration opportunities: "play with levels of X" rather than "I offer X"
+  - Keep it genuine and strategic without being overly formal
+
+**Technical Exploration Section — TWO APPROACHES:**
+
+  **Option A - Specific Take Breakdown** (when takes have distinct, visible external differences):
+  - Use when: Different accents, obvious costume changes, format shifts (landscape vs portrait)
+  - Break down each take: "Take 1: US Accent – Glasses and simple framing. Just a guy who genuinely loves bricks. Costuming allows for a bit more of a hipster feel."
+  - Focus on observable elements: accent, props/accessories, framing, format conventions
+  - Add brief observational notes that don't prescribe emotion
+  - Example scenes: September (accent + format changes), July intro (could use this format)
+
+  **Option B - Questions/Choices Explored** (when differences are internal or you want viewer to discover):
+  - Use when: Exploring relationship dynamics, mental states, or when external changes support internal explorations
+  - **DON'T assign choices to specific takes** - describe the range explored
+  - Lead with conversational framing: "Rather than focus too much on X, I decided to..."
+  - Use question format: "Played with questions like: Was I embarrassed? Was I proud?"
+  - Describe costume/setting choices and what they showed without labeling specific takes
+  - Include organic moments (fly interruptions, props you grabbed)
+  - Example: "A dressing gown showed I really wasn't thinking about how I looked, while other costume choices reflected different levels of self-consciousness"
+  - Example scenes: August (meltdown levels), July (framing/setting experiments)
+
+  **General Guidelines (Both Approaches):**
+  - Write conversationally: "I rolled with it" not "I incorporated it"
+  - Use simple, direct language: "I focused on the intentions" instead of "I focused the performance on the situation"
+  - Break into clear, separate sentences rather than complex compound structures
+  - Focus on **what you experimented with**, never how it made the character feel
+  - **Forbidden emotional labels**: "calm," "moody," "nostalgic," "competitive," "warm," "volatile," "grounded," "introspective"
+  - **Acceptable descriptors**: Intentions, questions explored, relationship dynamics, mental states, self-awareness levels, physical choices, rhythms, pacing, archetypes
+  - Include genuine reactions: "ended up feeling more personal, friendly, and fun" or "without me having to shift the performance much at all"
+  - Mention technical risks and how they played out
+  - When describing imagined circumstances, use "I imagined" rather than "I decided" for clarity
+  - Keep it practical, actor-focused, never over-intellectualized
+  - Light humor is welcome when authentic
 
 ### Technical Implementation  
 - **Component Modularity**: Separated concerns with TripleTakeHero, MonthlySceneCard, and VideoGrid for maximum reusability
