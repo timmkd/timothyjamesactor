@@ -13,9 +13,34 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://timothyjamesactor.com"),
   title: "Timothy James - Actor",
   description:
     "Actor with 70+ productions across Australia and the UK. Dad, Japanese speaker and tech geek. Highlights include Guardians of the Galaxy, Rogue One and Les Misérables. Showreel, credits and bookings.",
+  openGraph: {
+    title: "Timothy James - Actor",
+    description:
+      "Melbourne-based actor with credits across film, TV and musical theatre. Highlights include Guardians of the Galaxy, Rogue One and BBC's Call the Midwife.",
+    url: "https://timothyjamesactor.com",
+    siteName: "Timothy James Actor",
+    images: [
+      {
+        url: "/source_images/headshots/Timothy James - glasses.png",
+        width: 1200,
+        height: 1200,
+        alt: "Timothy James - Actor headshot",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Timothy James - Actor",
+    description:
+      "Melbourne-based actor with credits across film, TV and musical theatre.",
+    images: ["/source_images/headshots/Timothy James - glasses.png"],
+  },
 };
 
 export default function RootLayout({
