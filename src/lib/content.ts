@@ -101,6 +101,8 @@ export interface TripleTakeCampaign {
   endDate: string;
   mission: string[];
   heroText: string;
+  descriptionTitle?: string;
+  descriptionParagraphs?: string[];
 }
 
 export interface TripleTakeTimData {

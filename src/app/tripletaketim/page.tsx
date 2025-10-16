@@ -37,10 +37,11 @@ export default function TripletaketimPage() {
       <TripleTakeHero
         title={campaign.title}
         subtitle={campaign.subtitle}
-        tagline={campaign.tagline}
         mission={campaign.mission}
         startDate={startDate}
         endDate={endDate}
+        descriptionTitle={campaign.descriptionTitle}
+        descriptionParagraphs={campaign.descriptionParagraphs}
       />
 
       {/* Monthly Scenes */}

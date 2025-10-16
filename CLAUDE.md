@@ -148,6 +148,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
     ```
 - **Best Practice**: For gradient backgrounds that need dark mode variants, use conditional rendering rather than Tailwind dark mode classes
 
+## Content Writing & Tone Guidelines
+
+When writing marketing copy, content descriptions, or any user-facing text for this site, follow these principles based on Timothy's voice:
+
+### Language & Spelling
+- **ALWAYS use British/Australian English spelling** (Timothy is Australian)
+  - focussing (not focusing), realised (not realized), colour (not color)
+  - -ise endings (not -ize): organise, recognise, realise
+  - -our endings (not -or): colour, favour, behaviour
+
+### Core Principles
+1. **Direct over explanatory** - State what you DO, not what you DON'T do
+   - ✅ "Different objectives, tactics, and character choices"
+   - ❌ "Different objectives, tactics, and character choices—not just 'loud vs quiet'"
+
+2. **Action-oriented** - Favour doing over theorising
+   - ✅ "Getting it done beats getting it perfect"
+   - ✅ "I'm focussing on getting it done more than getting it perfect"
+   - ❌ "Perfection can be the enemy of progress and consistent practice"
+
+3. **Concise and punchy** - Remove unnecessary qualifiers when the positive statement is clear
+   - ✅ "Three takes per scene helps me find the strongest choice and build creative muscles"
+   - ❌ "After working with various instructors on delivering one scene three ways, I came to realise that this particular approach..."
+
+4. **Credible over personal** - Use research/principles over name-dropping
+   - ✅ "In Atomic Habits, James Clear describes a photography class..." (universal principle)
+   - ❌ "After working with Greg Apps..." (personal anecdote)
+
+5. **Confident** - State principles without over-justifying
+   - Trust the reader to understand the value
+   - Avoid defensive or apologetic language
+   - Don't explain why alternatives are bad—just state what works
+
+6. **Natural, conversational phrasing** - Timothy edits towards his natural voice
+   - ✅ "build creative muscles" - uses vivid, active metaphors
+   - ✅ "I'm focussing on getting it done more than getting it perfect" - first person, natural rhythm
+
+### Editing Pattern
+When Timothy edits your copy, he typically:
+- **Removes**: Explanatory clauses, comparisons to what he's NOT doing, defensive justifications
+- **Keeps**: Clear statements of action, principle-based reasoning, concrete commitments
+- **Shortens**: Multi-clause sentences into direct statements
+
+### Examples from #TripleTakeTim Project
+
+**Original attempt:**
+> "Self-tape skills are the modern actor's essential toolkit. After working with Greg Apps on delivering one scene three ways, I realised this approach helps me find the strongest choice while avoiding generic 'loud vs quiet' variations."
+
+**Timothy's style:**
+> "In Atomic Habits, James Clear describes a photography class split into two groups: one graded on a single perfect photo, the other on quantity. The best photos came from the quantity group—they learned by doing."
+
+**Key differences:**
+- Replaced personal instructor reference with universal principle
+- Removed "essential toolkit" qualifier
+- Swapped "avoiding generic variations" with positive principle of learning through volume
+
 ## Development Notes
 - When implementing CV controls, use utility functions in `src/lib/content.ts:86-104`
 - Image optimization configured for multiple formats and sizes in `next.config.ts:4-8`

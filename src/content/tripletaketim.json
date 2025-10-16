@@ -1,8 +1,7 @@
 {
   "campaign": {
     "title": "#TripleTakeTim",
-    "subtitle": "12 months of continued training, casting director connection, and brand building.",
-    "tagline": "Every scene, triple takes.",
+    "subtitle": "Monthly scene work with three distinct takes. Every month for twelve months.",
     "startDate": "2025-07",
     "endDate": "2026-08",
     "mission": [
@@ -11,7 +10,12 @@
       "Connect with casting directors through consistent quality content",
       "Continue to train and establish a professional brand"
     ],
-    "heroText": "Monthly scene work exploring character choices, objectives, and technique"
+    "descriptionTitle": "Why Three Takes?",
+    "descriptionParagraphs": [
+      "In Atomic Habits, James Clear describes a photography class split into two groups: one graded on a single perfect photo, the other on quantity. The best photos came from the quantity group—they learned by doing.",
+      "Three takes per scene helps me find the strongest choice and build creative muscles. I'm focussing on getting it done more than getting it perfect.",
+      "This is my commitment to consistent practice, staying audition-ready, and building connections with casting directors."
+    ]
   },
   "scenes": [
     {
