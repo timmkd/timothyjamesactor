@@ -17,15 +17,15 @@ https://timothyjamesactor.com/tripletaketim
 - **utm_source** - Where the traffic originates (email, linkedin, instagram, etc.)
 - **utm_medium** - The type of marketing channel (direct-outreach, social, platform, etc.)
 - **utm_campaign** - The specific campaign or casting director name
-- **utm_content** - Specific content or link variant (portfolio, tripletaketim, specific scene, etc.)
+- **utm_content** - Specific content or link variant (homepage, tripletaketim, specific scene, etc.)
 
 ## UTM Parameter Templates
 
 ### 1. Direct Email Outreach to Casting Directors
 
-**Portfolio Link:**
+**Homepage Link:**
 ```
-https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=[casting-director-name]&utm_content=portfolio
+https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=[casting-director-name]&utm_content=homepage
 ```
 
 **#TripleTakeTim Link:**
@@ -35,13 +35,13 @@ https://timothyjamesactor.com/tripletaketim?utm_source=email&utm_medium=direct-o
 
 **Example - Amanda Mitchell Casting:**
 ```
-https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=amanda-mitchell-casting&utm_content=portfolio
+https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=amanda-mitchell-casting&utm_content=homepage
 
 https://timothyjamesactor.com/tripletaketim?utm_source=email&utm_medium=direct-outreach&utm_campaign=amanda-mitchell-casting&utm_content=tripletaketim
 ```
 
 **How to use in email:**
-Hyperlink natural text like "view my [full portfolio here]" or "check out my [#TripleTakeTim campaign]" - recipients see clean text but clicks are tracked.
+Hyperlink natural text like "view my [portfolio site here]" or "check out my [#TripleTakeTim campaign]" - recipients see clean text but clicks are tracked.
 
 ### 2. Social Media Posts
 
@@ -69,7 +69,7 @@ https://timothyjamesactor.com/tripletaketim?utm_source=youtube&utm_medium=social
 
 **When Campos Talent shares your links:**
 ```
-https://timothyjamesactor.com/?utm_source=campos-talent&utm_medium=agency&utm_campaign=agent-share&utm_content=portfolio
+https://timothyjamesactor.com/?utm_source=campos-talent&utm_medium=agency&utm_campaign=agent-share&utm_content=homepage
 
 https://timothyjamesactor.com/tripletaketim?utm_source=campos-talent&utm_medium=agency&utm_campaign=agent-share&utm_content=tripletaketim
 ```
@@ -94,7 +94,7 @@ https://timothyjamesactor.com/tripletaketim?utm_source=spotlight&utm_medium=plat
 
 **Permanent link in email signature:**
 ```
-https://timothyjamesactor.com/?utm_source=email&utm_medium=signature&utm_campaign=general&utm_content=portfolio
+https://timothyjamesactor.com/?utm_source=email&utm_medium=signature&utm_campaign=general&utm_content=homepage
 ```
 
 ### 6. Monthly Scene-Specific Promotions
@@ -128,7 +128,7 @@ https://timothyjamesactor.com/tripletaketim?utm_source=linkedin&utm_medium=socia
 - **Always use lowercase** for consistency
 - **Use hyphens** instead of spaces or underscores (e.g., `amanda-mitchell-casting` not `amanda_mitchell_casting`)
 - **Be specific with utm_campaign** - use individual casting director names so you can track who engages
-- **Use utm_content** to differentiate between portfolio vs #TripleTakeTim links
+- **Use utm_content** to differentiate between homepage vs #TripleTakeTim links
 - **Hyperlink natural text** - don't show raw URLs with UTM parameters in emails
 - **Keep a log** of which casting directors you've contacted and when, for correlation with analytics
 - **Don't use URL shorteners** for casting director outreach - they're more likely to click timothyjamesactor.com than bit.ly
@@ -138,9 +138,9 @@ https://timothyjamesactor.com/tripletaketim?utm_source=linkedin&utm_medium=socia
 ### Casting Director Email Template
 Replace `[casting-director-name]` with their name in kebab-case (e.g., `amanda-mitchell-casting`):
 
-**Portfolio:**
+**Homepage:**
 ```
-https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=[casting-director-name]&utm_content=portfolio
+https://timothyjamesactor.com/?utm_source=email&utm_medium=direct-outreach&utm_campaign=[casting-director-name]&utm_content=homepage
 ```
 
 **#TripleTakeTim:**
