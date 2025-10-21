@@ -18,25 +18,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Analytics Setup
 
 ### Implementation
-- **Platform**: Vercel Analytics + Vercel Speed Insights
-- **Custom Events**: Tracking #TripleTakeTim campaign interactions
-- **YouTube Analytics**: Built-in video engagement metrics via YouTube embeds
+- **Platforms**: Google Analytics 4 (GA4) + Vercel Analytics + Vercel Speed Insights
+- **Dual Tracking**: All custom events sent to both GA4 and Vercel Analytics
+- **Coverage**: Comprehensive tracking across videos, images, and #TripleTakeTim campaign
+- **Environment Variable**: `NEXT_PUBLIC_GA_MEASUREMENT_ID` (set in Vercel)
 
 ### Components
-- `AnalyticsTracker.tsx` - Client component for custom event tracking
-- Vercel Analytics integrated in root layout
-- Custom events tracked:
-  - `tripletaketim_page_view` - Page visits
-  - `tripletaketim_video_play` - Video plays by month and take number
-  - `tripletaketim_hero_click` - Hero CTA interactions
-  - `tripletaketim_homepage_click` - Homepage section clicks
-  - `tripletaketim_month_view` - Monthly scene scroll tracking
+- `GoogleAnalyticsWrapper.tsx` - Client wrapper for GA4 integration
+- `AnalyticsTracker.tsx` - Client component for custom event tracking (dual platform)
+- `VideoEmbed.tsx` - Video component with interaction tracking
+- `PhotoSwipeGallery.tsx` - Image gallery with view tracking
+- Analytics integrated in root layout
+
+### Tracked Events
+
+**#TripleTakeTim Campaign:**
+- `tripletaketim_page_view` - Page visits
+- `tripletaketim_video_play` - Video plays by month and take number
+- `tripletaketim_hero_click` - Hero CTA interactions
+- `tripletaketim_homepage_click` - Homepage section clicks
+- `tripletaketim_month_view` - Monthly scene scroll tracking
+
+**General Site Analytics:**
+- `video_play` - All video interactions (showreels and reels) across homepage and videos page
+- `image_view` - Image gallery lightbox opens with image title and gallery ID
+
+**Automatic Tracking:**
+- Page views for all pages (GA4 and Vercel)
+- UTM parameters captured automatically
 
 ### UTM Strategy
 - UTM parameter guide in `UTM_STRATEGY.md`
 - Track casting director outreach effectiveness
 - Monitor social media campaign performance
-- Vercel Analytics automatically captures UTM parameters
+- Both analytics platforms automatically capture UTM parameters
 
 ## Architecture
 
@@ -59,9 +74,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **src/components/**: Reusable React components
   - `CreditRow.tsx` - Displays individual credits in CV grid
   - `Navigation.tsx` - Site navigation
-  - `PhotoSwipeGallery.tsx` - Image gallery component
+  - `PhotoSwipeGallery.tsx` - Image gallery component with view tracking
   - `InlinePhotoSwipe.tsx` - Inline photo viewer
   - `ThemeToggle.tsx` - Theme switching functionality
+  - `AnalyticsTracker.tsx` - Custom event tracking for both GA4 and Vercel Analytics
+  - `GoogleAnalyticsWrapper.tsx` - Client wrapper for Google Analytics integration
+  - `VideoEmbed.tsx` - Video iframe component with interaction tracking
 - **src/content/**: JSON data files with typed interfaces
   - `credits.json` - Acting credits/CV data
   - `profile.json` - Actor profile information
