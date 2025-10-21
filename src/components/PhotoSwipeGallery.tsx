@@ -6,6 +6,7 @@ import PhotoSwipe from "photoswipe";
 import "photoswipe/dist/photoswipe.css";
 
 import { ImageItem } from "@/lib/content";
+import { trackImageGallery } from "./AnalyticsTracker";
 
 interface PhotoSwipeGalleryProps {
   images: ImageItem[];
@@ -32,6 +33,13 @@ export default function PhotoSwipeGallery({
     const handleClick = async (e: MouseEvent, index: number) => {
       e.preventDefault();
       if (!isMounted) return;
+
+      // Track image gallery open
+      const clickedImage = images[index];
+      trackImageGallery.open(
+        clickedImage.title || clickedImage.alt,
+        galleryID
+      );
 
       if (lightboxRef.current) {
         lightboxRef.current.destroy();

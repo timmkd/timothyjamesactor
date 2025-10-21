@@ -1,14 +1,16 @@
-import { content, Video } from "@/lib/content";
+'use client';
 
-const VideoCard = ({ video }: { video: Video }) => (
+import { content, Video } from "@/lib/content";
+import VideoEmbed from "@/components/VideoEmbed";
+
+const VideoCard = ({ video, videoType }: { video: Video; videoType: 'showreel' | 'reel' }) => (
   <div className="card overflow-hidden">
     <div className="aspect-video relative">
-      <iframe
-        src={`${video.embedUrl}?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0`}
-        className="w-full h-full"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowFullScreen
+      <VideoEmbed
+        embedUrl={`${video.embedUrl}?h=360&w=640&autoplay=0&title=0&byline=0&portrait=0`}
         title={video.title}
+        videoType={videoType}
+        location="videos-page"
       />
     </div>
     <div className="p-6">
@@ -37,7 +39,7 @@ export default function VideosPage() {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {content.videos.showreels.map((showreel) => (
-              <VideoCard key={showreel.id} video={showreel} />
+              <VideoCard key={showreel.id} video={showreel} videoType="showreel" />
             ))}
           </div>
         </div>
@@ -49,7 +51,7 @@ export default function VideosPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {content.videos.reels.map((reel) => (
-              <VideoCard key={reel.id} video={reel} />
+              <VideoCard key={reel.id} video={reel} videoType="reel" />
             ))}
           </div>
         </div>

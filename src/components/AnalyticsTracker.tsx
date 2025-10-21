@@ -87,3 +87,38 @@ export const trackTripleTakeEvent = {
     });
   }
 };
+
+// General video tracking
+export const trackVideo = {
+  play: (videoTitle: string, videoType: 'showreel' | 'reel', location: string) => {
+    // Vercel Analytics
+    track('video_play', {
+      title: videoTitle,
+      type: videoType,
+      location
+    });
+
+    // Google Analytics
+    event('video_play', {
+      category: 'Video',
+      label: `${videoType} - ${videoTitle} - ${location}`
+    });
+  }
+};
+
+// Image gallery tracking
+export const trackImageGallery = {
+  open: (imageTitle: string, galleryId: string) => {
+    // Vercel Analytics
+    track('image_view', {
+      title: imageTitle,
+      gallery: galleryId
+    });
+
+    // Google Analytics
+    event('image_view', {
+      category: 'Gallery',
+      label: `${galleryId} - ${imageTitle}`
+    });
+  }
+};

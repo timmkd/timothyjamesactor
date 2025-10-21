@@ -3,6 +3,7 @@
 import { content } from "@/lib/content";
 import Link from "next/link";
 import InlinePhotoSwipe from "@/components/InlinePhotoSwipe";
+import VideoEmbed from "@/components/VideoEmbed";
 import { useEffect, useState } from "react";
 import { trackTripleTakeEvent } from "@/components/AnalyticsTracker";
 
@@ -142,12 +143,11 @@ export default function Home() {
             {/* Showreel */}
             <div className="lg:col-span-7 pt-2">
               <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-sm card">
-                <iframe
-                  src={`https://player.vimeo.com/video/1066502106?title=0&byline=0&portrait=0`}
-                  className="w-full h-full"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
+                <VideoEmbed
+                  embedUrl="https://player.vimeo.com/video/1066502106?title=0&byline=0&portrait=0"
                   title="Timothy James Showreel"
+                  videoType="showreel"
+                  location="homepage"
                 />
               </div>
             </div>
