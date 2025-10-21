@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { track } from '@vercel/analytics';
+import { event } from 'nextjs-google-analytics';
 
 export function AnalyticsTracker() {
   const pathname = usePathname();
@@ -10,9 +11,16 @@ export function AnalyticsTracker() {
   useEffect(() => {
     // Track #TripleTakeTim page views
     if (pathname === '/tripletaketim') {
+      // Vercel Analytics
       track('tripletaketim_page_view', {
         page: pathname,
         campaign: 'TripleTakeTim'
+      });
+
+      // Google Analytics
+      event('tripletaketim_page_view', {
+        category: 'TripleTakeTim',
+        label: pathname
       });
     }
   }, [pathname]);
@@ -23,31 +31,59 @@ export function AnalyticsTracker() {
 // Custom event tracking functions for components to use
 export const trackTripleTakeEvent = {
   videoPlay: (month: string, take: number) => {
+    // Vercel Analytics
     track('tripletaketim_video_play', {
       month,
       take,
       campaign: 'TripleTakeTim'
     });
+
+    // Google Analytics
+    event('tripletaketim_video_play', {
+      category: 'TripleTakeTim',
+      label: `${month} - Take ${take}`
+    });
   },
-  
+
   heroClick: () => {
+    // Vercel Analytics
     track('tripletaketim_hero_click', {
       action: 'clicked_learn_more',
       campaign: 'TripleTakeTim'
     });
+
+    // Google Analytics
+    event('tripletaketim_hero_click', {
+      category: 'TripleTakeTim',
+      label: 'clicked_learn_more'
+    });
   },
-  
+
   monthScroll: (month: string) => {
+    // Vercel Analytics
     track('tripletaketim_month_view', {
       month,
       campaign: 'TripleTakeTim'
     });
+
+    // Google Analytics
+    event('tripletaketim_month_view', {
+      category: 'TripleTakeTim',
+      label: month
+    });
   },
-  
+
   homepageSectionClick: () => {
+    // Vercel Analytics
     track('tripletaketim_homepage_click', {
       action: 'clicked_from_homepage',
-      campaign: 'TripleTakeTim'  
+      campaign: 'TripleTakeTim'
+    });
+
+    // Google Analytics
+    event('tripletaketim_homepage_click', {
+      category: 'TripleTakeTim',
+      label: 'clicked_from_homepage'
     });
   }
 };

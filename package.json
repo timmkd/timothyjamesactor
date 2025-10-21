@@ -17,6 +17,7 @@
     "dotenv": "^17.2.1",
     "next": "15.4.4",
     "next-sanity": "^9.12.3",
+    "nextjs-google-analytics": "^2.3.7",
     "photoswipe": "^5.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",

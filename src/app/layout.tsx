@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -217,6 +218,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        <GoogleAnalytics />
         <Analytics />
         <SpeedInsights />
         <AnalyticsTracker />
