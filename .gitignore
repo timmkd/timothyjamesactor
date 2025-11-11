@@ -42,3 +42,6 @@ next-env.d.ts
 # Ignore large files for GitHub
 public/source_images/headshots/platinum-b-headshot.png
 public/source_images/headshots/Timothy James - glasses.png
+
+# Snyk Security Extension - AI Rules (auto-generated)
+.cursor/rules/snyk_rules.mdc

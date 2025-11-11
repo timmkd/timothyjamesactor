@@ -57,7 +57,7 @@ const MonthlySceneCard = ({ scene }: MonthlySceneCardProps) => {
           {scene.whyThisScene && (
             <div className="card p-6 bg-[--color-background]">
               <h4 className="font-bold text-[--color-foreground] mb-3">
-                Why This Scene
+                Why this scene
               </h4>
               <p className="text-[--color-muted] text-sm leading-relaxed whitespace-pre-line">
                 {scene.whyThisScene}
@@ -68,7 +68,7 @@ const MonthlySceneCard = ({ scene }: MonthlySceneCardProps) => {
           {scene.technicalExploration && (
             <div className="card p-6 bg-[--color-background]">
               <h4 className="font-bold text-[--color-foreground] mb-3">
-                Technical Exploration
+                Technical exploration
               </h4>
               <p className="text-[--color-muted] text-sm leading-relaxed whitespace-pre-line">
                 {scene.technicalExploration}
