@@ -203,11 +203,20 @@ When writing marketing copy, content descriptions, or any user-facing text for t
    - ✅ "build creative muscles" - uses vivid, active metaphors
    - ✅ "I'm focussing on getting it done more than getting it perfect" - first person, natural rhythm
 
+7. **Simple lists over exhaustive detail** - Trust the reader to fill in specifics
+   - ✅ "facial hair and tie/shirt/jacket combinations"
+   - ❌ "facial hair (moustache in two takes, clean-shaven in one) and tie/shirt/jacket combinations"
+
+8. **First person active statements** - Describe what you did, not abstract observations
+   - ✅ "I have ranged from bored to eager"
+   - ❌ "One take is more relaxed, almost bored"
+
 ### Editing Pattern
 When Timothy edits your copy, he typically:
-- **Removes**: Explanatory clauses, comparisons to what he's NOT doing, defensive justifications
+- **Removes**: Explanatory clauses, comparisons to what he's NOT doing, defensive justifications, parenthetical specifics
 - **Keeps**: Clear statements of action, principle-based reasoning, concrete commitments
 - **Shortens**: Multi-clause sentences into direct statements
+- **Simplifies**: Detailed breakdowns into broad categories (trust the reader)
 
 ### Examples from #TripleTakeTim Project
 
