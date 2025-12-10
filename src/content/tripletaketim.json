@@ -19,6 +19,35 @@
   },
   "scenes": [
     {
+      "id": "december-2025",
+      "month": "December",
+      "year": 2025,
+      "title": "The Audit",
+      "description": "Scene from \"Andor\" Season 2 (Star Wars) – An Imperial officer conducts a quiet but pointed interrogation. Controlled, bureaucratic menace with an undercurrent of something unsettling.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "4V68BY1ujOY",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "0qi1Oyh4Z2U",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "TOD44zSoGX4",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I watched this scene and immediately thought: that's a character I'd love to play. A low-rank Imperial officer with quiet menace — creepy, threatening, bureaucratic. These smaller, intense roles are exactly the kind I want to be considered for. I also wanted to practice playing against type: taking a character cast one way and exploring what happens when I go the opposite direction.",
+      "technicalExploration": "My hair and facial hair are shaggier than usual, which goes against the Empire's clean military standard. I used that contrast to shape the character rather than fighting it.\n\nTwo takes in a British accent for the expected Imperial tone. Take 3 in my native Australian accent — going against the expected casting created a fun shift in depth and energy.\n\nI experimented with distance from camera, including a deliberately too-close framing in one take to push discomfort and add an unsettling edge."
+    },
+    {
       "id": "november-2025",
       "month": "November",
       "year": 2025,
