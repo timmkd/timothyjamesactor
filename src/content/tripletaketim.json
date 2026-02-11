@@ -19,6 +19,64 @@
   },
   "scenes": [
     {
+      "id": "february-2026",
+      "month": "February",
+      "year": 2026,
+      "title": "Staring Down an Empty Pipe",
+      "description": "Scene from \"The Breakfast Club\" – Vice Principal Vernon tells student John Bender he has no future. Authority, power dynamics, and three ways to stare someone down.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "JBCa4rDVMxk",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "X8s56TC_XdE",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "BoBouvLG73E",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I worked on this scene when I first started self-taping several years ago and wanted to revisit it with more experience. I've also had consistently strong feedback on authority roles — whether or not the character wields that authority well. That makes this a useful character space to keep exploring.",
+      "technicalExploration": "Three expressions of power: overly friendly and attempting to disarm, exhausted and irritable, and openly disengaged. A US accent across all three takes.\n\nI explored how subtle shifts in energy and restraint affect dominance in the scene — from misplaced warmth to weary indifference."
+    },
+    {
+      "id": "january-2026",
+      "month": "January",
+      "year": 2026,
+      "title": "Who is Sami Zamir?",
+      "description": "Scene from \"The Agency\" (Paramount+) – A tech specialist delivers intel in a suspicious car park. The handover is simple. The dynamic isn't.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "0GdYil3xtEs",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "ckFR7OuR_RQ",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "t9LAMOsuzVI",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I am a tech guy. I work in tech. When I saw a minor \"tech guy\" role in The Agency, I thought: that should be me. These small, specific characters are exactly the kind I want to be considered for. The character is almost a version of me — grounded, natural delivery in my native Australian.",
+      "technicalExploration": "I explored three different relationships to the off-screen reader: intimidated and cautious, helpful and compliant, skeptical and indifferent.\n\nEach take started with a different pre-beat: checking GPS on my phone, checking my hair, and — for contrast — arriving with a laptop and setting up.\n\nThe endings ranged from pushback to compliance to confusion."
+    },
+    {
       "id": "december-2025",
       "month": "December",
       "year": 2025,
