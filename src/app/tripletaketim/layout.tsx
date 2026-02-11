@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     siteName: "Timothy James Actor",
     images: [
       {
-        url: "/source_images/headshots/Timothy James - glasses.png",
-        width: 1200,
-        height: 1200,
-        alt: "#TripleTakeTim - Timothy James monthly scene work project",
+        url: "/source_images/social.png",
+        width: 1536,
+        height: 1024,
+        alt: "#TripleTakeTim - Three takes, same moment, different choices",
       },
     ],
     locale: "en_AU",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "#TripleTakeTim - Timothy James",
     description:
       "Timothy James explores 12 months of monthly scene work. Three takes per scene. Focussing on getting it done more than getting it perfect.",
-    images: ["/source_images/headshots/Timothy James - glasses.png"],
+    images: ["/source_images/social.png"],
   },
 };
 
