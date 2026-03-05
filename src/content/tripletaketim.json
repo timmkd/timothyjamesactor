@@ -19,6 +19,35 @@
   },
   "scenes": [
     {
+      "id": "march-2026",
+      "month": "March",
+      "year": 2026,
+      "title": "Table for Four",
+      "description": "Scene from \"Curb Your Enthusiasm\" – A restaurant host faces a familiar but awkward situation: a reservation for four has suddenly become two, and restaurant policy says the table can't be used that way. A polite but increasingly uncomfortable standoff as the logic of the situation unravels.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "D0MpYP8UWpg",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "6J47d357g9c",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "uGTGSEUtk64",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "It sits in a subtle comedic space that relies on timing, listening, and restraint rather than big punchlines. The host has limited power but still has to enforce the rules — a classic Curb Your Enthusiasm moment grounded in everyday rules, social awkwardness, and the tension between politeness and absurdity.",
+      "technicalExploration": "Helpfulness vs. rule-enforcement — from accommodating to strictly procedural. Awkward escalation while staying polite, with one take including a snap and a quick recovery. Accent variation: Takes 1 & 2 US, Take 3 Australian.\n\nI kept the same shirt and tie across all three takes but played around with hair, glasses, and earrings to differentiate the characters. Each version shifts the host's tone, patience, and subtle behavioural choices, changing the power dynamic in the scene."
+    },
+    {
       "id": "february-2026",
       "month": "February",
       "year": 2026,
