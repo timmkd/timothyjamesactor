@@ -19,6 +19,35 @@
   },
   "scenes": [
     {
+      "id": "april-2026",
+      "month": "April",
+      "year": 2026,
+      "title": "A Dozen Pills Before Breakfast",
+      "description": "Scene adapted from a television drama – An emotional scene centred on choice, control, and how a person faces a cancer diagnosis. Mark is confronted by his family about his decision not to accept treatment — a conversation where support becomes pressure, and a personal decision cuts against what everyone else wants.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "ulUSdC-H32U",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "c0Q5fLeZreQ",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "edv8rAxg630",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I wanted to explore a scene with real emotional weight — where the stakes are life and death but the conflict is internal. Mark has made a decision that the people closest to him can't accept. That tension between love and autonomy is rich ground for finding different ways to handle the same moment.",
+      "technicalExploration": "Three takes exploring different ways to handle the same situation: anger and resistance, containment and control, and quiet acceptance.\n\nI experimented with framing — camera position above or below, and how close up — to shift the feel of each take.\n\nHair and costuming reflect the emotional state: most unkempt in the angriest take, most put together in the most accepting."
+    },
+    {
       "id": "march-2026",
       "month": "March",
       "year": 2026,
