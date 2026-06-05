@@ -3,7 +3,7 @@
     "title": "#TripleTakeTim",
     "subtitle": "Monthly scene work with three distinct takes. Every month for twelve months.",
     "startDate": "2025-07",
-    "endDate": "2026-08",
+    "endDate": "2026-06",
     "mission": [
       "Every month post a new scene with three distinct takes",
       "Send 3 takes of every scene to every audition (when appropriate)",
@@ -18,6 +18,65 @@
     ]
   },
   "scenes": [
+    {
+      "id": "june-2026",
+      "month": "June",
+      "year": 2026,
+      "title": "The Witness",
+      "isFinal": true,
+      "description": "A witness interview following a hit-and-run. The officer believes the witness knows more than they're saying, and a routine fact-finding conversation gradually shifts into pressure.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "L6bHDKKBp6c",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "0iLUYRPnG4A",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "wLj7qYpaBpU",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I sometimes get put up for police roles, but I've never had the wardrobe to back it up. This scene was my excuse to build a simple police look — or at least a shirt — that I can reach for in future auditions, while exploring a casting space I'd like to do more in.",
+      "technicalExploration": "I built each take around a completely different person — three people from different parts of my life, from childhood to work to family, that I've had very different relationships with. Holding a real relationship in my head shifted everything: the trust, the suspicion, and the frustration.\n\nI also changed my physical approach across the takes — sitting, standing, and varying how the conversation begins — which fed back into the relationship and the power in the room."
+    },
+    {
+      "id": "may-2026",
+      "month": "May",
+      "year": 2026,
+      "title": "Five Hundred Dollars",
+      "description": "Scene from \"The Bear\" – a phone call between a father and his child, trying to offer comfort and reassurance in a vulnerable moment.",
+      "videos": [
+        {
+          "take": 1,
+          "label": "Take 1",
+          "youtubeId": "S9kC_HNAmx8",
+          "description": ""
+        },
+        {
+          "take": 2,
+          "label": "Take 2",
+          "youtubeId": "ZReQnVLi7DU",
+          "description": ""
+        },
+        {
+          "take": 3,
+          "label": "Take 3",
+          "youtubeId": "zKPue_KiPFA",
+          "description": ""
+        }
+      ],
+      "whyThisScene": "I'm a dad in real life and often get cast as one, but I haven't tackled a dad scene yet in these Triple Takes. This scene gave me two things to work on at once: phone calls and fatherhood. The text leaves a lot open, which made it useful ground for trying different relationships and circumstances.",
+      "technicalExploration": "Across the three takes I shifted the child's situation and what they might be scared of, and the relationship with their mother — including why the father might want to avoid speaking to her.\n\nI also played with emotional availability: was the father trying to get on with other things, or willing to drop everything for his child? That fed into different intentions behind the Five Hundred Dollars offer — reassurance, distraction, or a bribe."
+    },
     {
       "id": "april-2026",
       "month": "April",
