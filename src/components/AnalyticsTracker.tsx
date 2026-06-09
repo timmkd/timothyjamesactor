@@ -85,6 +85,20 @@ export const trackTripleTakeEvent = {
       category: 'TripleTakeTim',
       label: 'clicked_from_homepage'
     });
+  },
+
+  instagramFollow: (location: string) => {
+    // Vercel Analytics
+    track('tripletaketim_instagram_follow', {
+      location,
+      campaign: 'TripleTakeTim'
+    });
+
+    // Google Analytics
+    event('tripletaketim_instagram_follow', {
+      category: 'TripleTakeTim',
+      label: location
+    });
   }
 };
 

@@ -40,6 +40,7 @@ export default function TripletaketimPage() {
         mission={campaign.mission}
         startDate={startDate}
         endDate={endDate}
+        instagramUrl={campaign.instagramUrl}
         descriptionTitle={campaign.descriptionTitle}
         descriptionParagraphs={campaign.descriptionParagraphs}
       />

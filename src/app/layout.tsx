@@ -69,11 +69,11 @@ export default function RootLayout({
                   </p>
                   <div className="flex space-x-4">
                     <a
-                      href="https://instagram.com/timmkd"
+                      href="https://www.instagram.com/tripletaketim/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[--color-muted] hover:text-[--color-foreground] transition-colors"
-                      aria-label="Instagram"
+                      aria-label="Instagram (@tripletaketim)"
                     >
                       <svg
                         className="w-6 h-6"

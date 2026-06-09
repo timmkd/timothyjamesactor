@@ -99,6 +99,7 @@ export interface TripleTakeCampaign {
   subtitle: string;
   startDate: string;
   endDate: string;
+  instagramUrl: string;
   mission: string[];
   heroText: string;
   descriptionTitle?: string;
